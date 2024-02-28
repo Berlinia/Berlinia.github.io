@@ -34,6 +34,13 @@
 	],
 	"variantrule": [
 		{
+			"name": "Weapon Skills",
+			"source": "MOD",
+			"entries": [
+				"Weapons have been largerly redesigned from the bottom up. Each weapon has been given, typically (exceptions apply), one short rest property and one long rest property. (Actually, nothing has been done yet, but this is a reminder for Berlinia to make fun weapon skills for each weapon."
+			]
+		}
+		{
 			"name": "Tool Profiencies",
 			"source": "MOD",
 			"ruleType": "V",
