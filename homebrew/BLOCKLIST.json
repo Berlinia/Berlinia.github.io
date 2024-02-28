@@ -13,6 +13,30 @@
     },
     "blocklist": [
 		{
+			"category": "variantrule",
+			"displayName": "Crashing",
+			"hash": "crashing_aag",
+			"source": "AAG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Crew",
+			"hash": "crew_aag",
+			"source": "AAG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Ship Repairs",
+			"hash": "ship%20repairs_aag",
+			"source": "AAG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Ship-to-Ship Combat",
+			"hash": "ship-to-ship%20combat_aag",
+			"source": "AAG"
+		},
+		{
 			"category": "spell",
 			"displayName": "Distort Value",
 			"hash": "distort%20value_ai",
@@ -25,16 +49,316 @@
 			"source": "AI"
 		},
 		{
+			"category": "variantrule",
+			"displayName": "Downtime and Franchise Activity: Explore Territory",
+			"hash": "downtime%20and%20franchise%20activity%3a%20explore%20territory_ai",
+			"source": "AI"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime and Franchise Activity: Franchise Restructuring",
+			"hash": "downtime%20and%20franchise%20activity%3a%20franchise%20restructuring_ai",
+			"source": "AI"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime and Franchise Activity: Headquarters Modification",
+			"hash": "downtime%20and%20franchise%20activity%3a%20headquarters%20modification_ai",
+			"source": "AI"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime and Franchise Activity: Marketeering",
+			"hash": "downtime%20and%20franchise%20activity%3a%20marketeering_ai",
+			"source": "AI"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime and Franchise Activity: Philanthropic Enterprise",
+			"hash": "downtime%20and%20franchise%20activity%3a%20philanthropic%20enterprise_ai",
+			"source": "AI"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime and Franchise Activity: Running a Franchise",
+			"hash": "downtime%20and%20franchise%20activity%3a%20running%20a%20franchise_ai",
+			"source": "AI"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime and Franchise Activity: Schmoozing",
+			"hash": "downtime%20and%20franchise%20activity%3a%20schmoozing_ai",
+			"source": "AI"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime and Franchise Activity: Scrutineering",
+			"hash": "downtime%20and%20franchise%20activity%3a%20scrutineering_ai",
+			"source": "AI"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime and Franchise Activity: Shady Business Practice",
+			"hash": "downtime%20and%20franchise%20activity%3a%20shady%20business%20practice_ai",
+			"source": "AI"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime and Franchise Activity: Team Building",
+			"hash": "downtime%20and%20franchise%20activity%3a%20team%20building_ai",
+			"source": "AI"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Alien Technology",
+			"hash": "alien%20technology_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Alternatives to Epic Boons",
+			"hash": "alternatives%20to%20epic%20boons_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Automatic Success",
+			"hash": "automatic%20success_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Diagonals",
+			"hash": "diagonals_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Building a Stronghold",
+			"hash": "downtime%20activity%3a%20building%20a%20stronghold_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Carousing",
+			"hash": "downtime%20activity%3a%20carousing_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Crafting a Magic Item",
+			"hash": "downtime%20activity%3a%20crafting%20a%20magic%20item_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Gaining Renown",
+			"hash": "downtime%20activity%3a%20gaining%20renown_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Performing Sacred Rites",
+			"hash": "downtime%20activity%3a%20performing%20sacred%20rites_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Running a Business",
+			"hash": "downtime%20activity%3a%20running%20a%20business_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Selling Magic Items",
+			"hash": "downtime%20activity%3a%20selling%20magic%20items_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Sowing Rumors",
+			"hash": "downtime%20activity%3a%20sowing%20rumors_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Training to Gain Levels",
+			"hash": "downtime%20activity%3a%20training%20to%20gain%20levels_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Facing",
+			"hash": "facing_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Firearms",
+			"hash": "firearms_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Hero Points",
+			"hash": "hero%20points_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Initiative Variants",
+			"hash": "initiative%20variants_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Injuries",
+			"hash": "injuries_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Inspiration",
+			"hash": "inspiration_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Loyalty",
+			"hash": "loyalty_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Madness",
+			"hash": "madness_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Massive Damage",
+			"hash": "massive%20damage_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Mixing Potions",
+			"hash": "mixing%20potions_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "New Ability Scores: Honor and Sanity",
+			"hash": "new%20ability%20scores%3a%20honor%20and%20sanity_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Proficiency Dice",
+			"hash": "proficiency%20dice_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Renown",
+			"hash": "renown_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Skill Variants",
+			"hash": "skill%20variants_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Wands That Don't Recharge",
+			"hash": "wands%20that%20don't%20recharge_dmg",
+			"source": "DMG"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Sidekicks",
+			"hash": "sidekicks_esk",
+			"source": "ESK"
+		},
+		{
 			"category": "spell",
 			"displayName": "Calling Card",
 			"hash": "calling%20card_ghpg",
 			"source": "GHPG"
 		},
 		{
+			"category": "variantrule",
+			"displayName": "Encounters at Sea",
+			"hash": "encounters%20at%20sea_gos",
+			"source": "GoS"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Mysterious Islands",
+			"hash": "mysterious%20islands_gos",
+			"source": "GoS"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Ocean Environs",
+			"hash": "ocean%20environs_gos",
+			"source": "GoS"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Officers and Crew",
+			"hash": "officers%20and%20crew_gos",
+			"source": "GoS"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Random Ships",
+			"hash": "random%20ships_gos",
+			"source": "GoS"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Ship Stat Blocks",
+			"hash": "ship%20stat%20blocks_gos",
+			"source": "GoS"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Ships in Combat",
+			"hash": "ships%20in%20combat_gos",
+			"source": "GoS"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Superior Ship Upgrades",
+			"hash": "superior%20ship%20upgrades_gos",
+			"source": "GoS"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Travel at Sea",
+			"hash": "travel%20at%20sea_gos",
+			"source": "GoS"
+		},
+		{
 			"category": "spell",
 			"displayName": "Frost Fingers",
 			"hash": "frost%20fingers_idrotf",
 			"source": "IDRotF"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Player Characters as Lycanthropes",
+			"hash": "player%20characters%20as%20lycanthropes_mm",
+			"source": "MM"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Player Characters as Vampires",
+			"hash": "player%20characters%20as%20vampires_mm",
+			"source": "MM"
 		},
 		{
 			"category": "spell",
@@ -181,10 +505,124 @@
 			"source": "PHB"
 		},
 		{
+			"category": "variantrule",
+			"displayName": "Customizing Ability Scores",
+			"hash": "customizing%20ability%20scores_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Crafting",
+			"hash": "downtime%20activity%3a%20crafting_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Practicing a Profession",
+			"hash": "downtime%20activity%3a%20practicing%20a%20profession_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Recuperating",
+			"hash": "downtime%20activity%3a%20recuperating_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Researching",
+			"hash": "downtime%20activity%3a%20researching_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Training",
+			"hash": "downtime%20activity%3a%20training_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Equipment Sizes",
+			"hash": "equipment%20sizes_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Inspiration",
+			"hash": "inspiration_phb",
+			"source": "PHB"
+		},
+		{
 			"category": "spell",
 			"displayName": "Silvery Barbs",
 			"hash": "silvery%20barbs_scc",
 			"source": "SCC"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Parleying with Monsters",
+			"hash": "parleying%20with%20monsters_tce",
+			"source": "TCE"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Sidekicks",
+			"hash": "sidekicks_tce",
+			"source": "TCE"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Accelerated Rests",
+			"hash": "accelerated%20rests_tdcsr",
+			"source": "TDCSR"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Alternative Resurrection Rules: Fading Spirits",
+			"hash": "alternative%20resurrection%20rules%3a%20fading%20spirits_tdcsr",
+			"source": "TDCSR"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Alternative Resurrection Rules: Harrowing Return",
+			"hash": "alternative%20resurrection%20rules%3a%20harrowing%20return_tdcsr",
+			"source": "TDCSR"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Alternative Resurrection Rules: Taxing Return",
+			"hash": "alternative%20resurrection%20rules%3a%20taxing%20return_tdcsr",
+			"source": "TDCSR"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Hemocraft",
+			"hash": "hemocraft_tdcsr",
+			"source": "TDCSR"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Mixed Ancestry Statistics",
+			"hash": "mixed%20ancestry%20statistics_tdcsr",
+			"source": "TDCSR"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Skyships",
+			"hash": "skyships_tdcsr",
+			"source": "TDCSR"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Familiars",
+			"hash": "familiars_vgm",
+			"source": "VGM"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Survivors",
+			"hash": "survivors_vrgr",
+			"source": "VRGR"
 		},
 		{
 			"category": "spell",
@@ -238,6 +676,102 @@
 			"category": "spell",
 			"displayName": "Zephyr Strike",
 			"hash": "zephyr%20strike_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Buying a Magic Item",
+			"hash": "downtime%20activity%3a%20buying%20a%20magic%20item_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Carousing",
+			"hash": "downtime%20activity%3a%20carousing_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Crafting an Item",
+			"hash": "downtime%20activity%3a%20crafting%20an%20item_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Crime",
+			"hash": "downtime%20activity%3a%20crime_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Gambling",
+			"hash": "downtime%20activity%3a%20gambling_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Pit Fighting",
+			"hash": "downtime%20activity%3a%20pit%20fighting_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Relaxation",
+			"hash": "downtime%20activity%3a%20relaxation_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Religious Service",
+			"hash": "downtime%20activity%3a%20religious%20service_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Research",
+			"hash": "downtime%20activity%3a%20research_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Selling a Magic Item",
+			"hash": "downtime%20activity%3a%20selling%20a%20magic%20item_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Training",
+			"hash": "downtime%20activity%3a%20training_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Activity: Work",
+			"hash": "downtime%20activity%3a%20work_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Downtime Revisited",
+			"hash": "downtime%20revisited_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Shared Campaign Variant Rules",
+			"hash": "shared%20campaign%20variant%20rules_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Tool Proficiencies",
+			"hash": "tool%20proficiencies_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "variantrule",
+			"displayName": "Tying Knots",
+			"hash": "tying%20knots_xge",
 			"source": "XGE"
 		}
 	]
