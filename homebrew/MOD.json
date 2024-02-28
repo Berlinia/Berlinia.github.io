@@ -34,10 +34,65 @@
 	],
 	"variantrule": [
 		{
-			"name": "Weapon Skills",
+			"name": "Weapon Properties",
 			"source": "MOD",
 			"entries": [
-				"Weapons have been largerly redesigned from the bottom up. Each weapon has been given, typically (exceptions apply), one short rest property and one long rest property. (Actually, nothing has been done yet, but this is a reminder for Berlinia to make fun weapon skills for each weapon."
+				"Heavy, Light, Thrown etc"
+				]
+		},
+		{
+			"name": "Weapon Masteries",
+			"source": "MOD",
+			"entries": [
+				"Weapons have been largerly redesigned inspired by the Unearthed Arcana. A character can now unlock Weapon Masteries and use them if they wield a weapon that meets the prerequisites. Its not about what weapon you have, but how you use it.",
+				{
+					"type": "optfeature",
+					"name": "Cleave",
+					"prerequisite": "Melee Weapon, {@variantrule Weapon Properties|MOD|Heavy Property}",
+					"entries": [
+						"If you hit a creature with a melee attack using this weapon, you can make an attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon’s damage, but don’t add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
+					]
+				},
+				{
+					"type": "optfeature",
+					"name": "Graze",
+					"prerequisite": "Melee Weapon, {@variantrule Weapon Properties|MOD|Heavy Property}",
+					"entries": [
+						"If your attack roll with tis weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can't be increased in any way, other than increasing the ability modifier."
+					]
+				},
+				{
+					"type": "optfeature",
+					"name": "Nick",
+					"prerequisite": "{@variantrule Weapon Properties|MOD|Light Property}",
+					"entries": [
+						"When you make the extra attack of the Light property, you can make it as part of the {@action Attack|PHB} action, instead of as a Bonus Action. You can make this extra attack only once per turn."
+					]
+				},
+				{
+					"type": "optfeature",
+					"name": "Push",
+					"prerequisite": "{@variantrule Weapon Properties|MOD|Heavy, Two Handed or Versatile Property}",
+					"entries": [
+						"If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is at most one size larger than you."
+					]
+				},
+				{
+					"type": "optfeature",
+					"name": "Sap",
+					"prerequisite": "{@variantrule Weapon Properties|MOD|Versatile or No Weapon Property}",
+					"entries": [
+						"If you hit a creature with this weapon, that creature has disadvantage on its first attack. This effect can only be applied once per turn."
+					]
+				},
+				{
+					"type": "optfeature",
+					"name": "Slow",
+					"prerequisite": "None",
+					"entries": [
+						"If you hit a creature with this weapon, that creature has disadvantage on its first attack. This effect can only be applied once per turn."
+					]
+				}
 			]
 		},
 		{
