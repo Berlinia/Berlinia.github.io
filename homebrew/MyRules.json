@@ -1,0 +1,2578 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MyRules",
+				"abbreviation": "MINE",
+				"full": "MyRules",
+				"url": "",
+				"authors": [
+					"Berlinia"
+				],
+				"convertedBy": []
+			}
+		]
+	},
+	"spell": [
+		{
+			"name": "Acid Splash",
+			"source": "MyRules",
+			"page": 211,
+			"basicRules": true,
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You hurl a bubble of acid. Choose one creature you can see within range, or choose two creatures you can see within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take {@damage 1d6} acid damage. The primary target also has their AC reduced by 1 until the end of their next turn.",
+				"This spell's damage increases by {@dice 1d6} when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."
+			],
+			"scalingLevelDice": {
+				"label": "acid damage",
+				"scaling": {
+					"1": "1d6",
+					"5": "2d6",
+					"11": "3d6",
+					"17": "4d6"
+				}
+			},
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"areaTags": [
+				"MT",
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcana Domain",
+							"shortName": "Arcana",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Elf (High)",
+					"source": "PHB",
+					"baseName": "Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Genasi (Water)",
+					"source": "MPMM",
+					"baseName": "Genasi",
+					"baseSource": "MPMM"
+				},
+				{
+					"name": "Kobold",
+					"source": "MPMM"
+				},
+				{
+					"name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
+					"source": "SCAG",
+					"baseName": "Half-Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Merfolk (Ixalan; Blue)",
+					"source": "PSX",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Ula Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Pact of the Tome",
+					"source": "PHB",
+					"featureType": [
+						"PB"
+					]
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Simic Scientist",
+					"source": "GGR"
+				}
+			],
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				},
+				{
+					"name": "Initiate of High Sorcery",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				}
+			]
+		},
+		{
+			"name": "Blade Ward",
+			"source": "MyRules",
+			"page": 218,
+			"level": 0,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You extend your hand and trace a sigil of warding in the air. For the duration, you can use your reaction to gain resistance against bludgeoning, piercing, and slashing damage dealt by melee weapon attacks."
+			],
+			"damageResist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcana Domain",
+							"shortName": "Arcana",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Elf (High)",
+					"source": "PHB",
+					"baseName": "Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Genasi (Earth)",
+					"source": "MPMM",
+					"baseName": "Genasi",
+					"baseSource": "MPMM"
+				},
+				{
+					"name": "Kobold",
+					"source": "MPMM"
+				},
+				{
+					"name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
+					"source": "SCAG",
+					"baseName": "Half-Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Merfolk (Ixalan; Blue)",
+					"source": "PSX",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Cosi Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Ula Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Pact of the Tome",
+					"source": "PHB",
+					"featureType": [
+						"PB"
+					]
+				}
+			],
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Initiate of High Sorcery",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				}
+			]
+		},
+		{
+			"name": "Calling Card",
+			"source": "MyRules",
+			"page": 119,
+			"level": 0,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a stamp carved like the mark left by your calling card"
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"entries": [
+				"You touch a corpse and mark it with a magical mark.",
+				"You can choose to make it a visible mark that appears as a rune or a sentence written on the flesh, or you can choose to make it an {@condition invisible} mark. Creatures who specifically examine a corpse for a calling card automatically detect one, whether visible or {@condition invisible}."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Control Flames",
+			"source": "MyRules",
+			"page": 152,
+			"otherSources": [
+				{
+					"source": "EEPC",
+					"page": 16
+				}
+			],
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				},
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You choose nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways:",
+				{
+					"type": "list",
+					"items": [
+						"You instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location.",
+						"You instantaneously extinguish the flames within the cube.",
+						"You double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour.",
+						"You cause simple shapes—such as the vague form of a creature, an inanimate object, or a location—to appear within the flames and animate as you like. The shapes last for 1 hour."
+					]
+				},
+				"If you cast this spell multiple times, you can have up to three non-instantaneous effects created by it active at a time, and you can dismiss such an effect as an action.",
+				"You can also use this spell to create fire, in equivalent amount to a candle. This counts as one of the effects mentioned above."
+			],
+			"miscTags": [
+				"LGT",
+				"SGT"
+			],
+			"areaTags": [
+				"C"
+			],
+			"hasFluffImages": true,
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Nature Domain",
+							"shortName": "Nature",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcana Domain",
+							"shortName": "Arcana",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Strength Domain (PSA)",
+							"shortName": "Strength (PSA)",
+							"source": "PSA"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Circle of the Land",
+							"shortName": "Land",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Elf (High)",
+					"source": "PHB",
+					"baseName": "Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Elf (Kaladesh; Vahadar)",
+					"source": "PSK",
+					"baseName": "Elf (Kaladesh)",
+					"baseSource": "PSK"
+				},
+				{
+					"name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
+					"source": "SCAG",
+					"baseName": "Half-Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Kobold",
+					"source": "MPMM"
+				},
+				{
+					"name": "Merfolk (Ixalan; Blue)",
+					"source": "PSX",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Ixalan; Green)",
+					"source": "PSX",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Emeria Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Ula Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Druidic Warrior",
+					"source": "TCE",
+					"featureType": [
+						"FS:R"
+					]
+				},
+				{
+					"name": "Pact of the Tome",
+					"source": "PHB",
+					"featureType": [
+						"PB"
+					]
+				}
+			],
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Initiate of High Sorcery",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Wood Elf Magic",
+					"source": "XGE"
+				}
+			]
+		},
+		{
+			"name": "Friends",
+			"source": "MyRules",
+			"page": 244,
+			"level": 0,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"For the duration, you have advantage on Charisma checks against 1 creature you can see within 30ft. Any creature that notices you cast this spell, while communicating with the target in a language they understand, is aware that you have cast a spell to mentally influence the target. "
+			],
+			"miscTags": [
+				"ADV"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcana Domain",
+							"shortName": "Arcana",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Elf (High)",
+					"source": "PHB",
+					"baseName": "Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
+					"source": "SCAG",
+					"baseName": "Half-Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Kobold",
+					"source": "MPMM"
+				},
+				{
+					"name": "Merfolk (Ixalan; Blue)",
+					"source": "PSX",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Siren",
+					"source": "PSX"
+				},
+				{
+					"name": "Merfolk (Zendikar; Cosi Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Ula Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Tiefling (Fierna)",
+					"source": "MTF",
+					"baseName": "Tiefling",
+					"baseSource": "PHB"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Pact of the Tome",
+					"source": "PHB",
+					"featureType": [
+						"PB"
+					]
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Azorius Functionary",
+					"source": "GGR"
+				},
+				{
+					"name": "Orzhov Representative",
+					"source": "GGR"
+				},
+				{
+					"name": "Selesnya Initiate",
+					"source": "GGR"
+				}
+			],
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Initiate of High Sorcery",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				}
+			]
+		},
+		{
+			"name": "Gust",
+			"source": "MyRules",
+			"page": 157,
+			"otherSources": [
+				{
+					"source": "EEPC",
+					"page": 19
+				},
+				{
+					"source": "ERLW",
+					"page": 50
+				},
+				{
+					"source": "TCE",
+					"page": 50
+				}
+			],
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You seize the air and compel it to create one of the following effects at a point you can see within range:",
+				{
+					"type": "list",
+					"items": [
+						"One Medium or smaller creature that you choose must succeed on a Strength saving throw against your spell save DC or be pushed up to 5 feet away from you.",
+						"You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds, or to disperse the effects of a toxic cloud in a 5ft area. The object is pushed up to 10 feet away from you. It isn't pushed with enough force to cause damage.",
+						"You create a harmless sensory effect using air, such as causing leaves to rustle, wind to slam shutters closed, or your clothing to ripple in a breeze."
+					]
+				}
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"FMV",
+				"OBJ",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Nature Domain",
+							"shortName": "Nature",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcana Domain",
+							"shortName": "Arcana",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Strength Domain (PSA)",
+							"shortName": "Strength (PSA)",
+							"source": "PSA"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Circle of the Land",
+							"shortName": "Land",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Elf (High)",
+					"source": "PHB",
+					"baseName": "Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Elf (Kaladesh; Vahadar)",
+					"source": "PSK",
+					"baseName": "Elf (Kaladesh)",
+					"baseSource": "PSK"
+				},
+				{
+					"name": "Half-Elf (Variant; Mark of Storm)",
+					"source": "ERLW",
+					"baseName": "Half-Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
+					"source": "SCAG",
+					"baseName": "Half-Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Kobold",
+					"source": "MPMM"
+				},
+				{
+					"name": "Merfolk (Ixalan; Blue)",
+					"source": "PSX",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Ixalan; Green)",
+					"source": "PSX",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Emeria Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Ula Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Druidic Warrior",
+					"source": "TCE",
+					"featureType": [
+						"FS:R"
+					]
+				},
+				{
+					"name": "Pact of the Tome",
+					"source": "PHB",
+					"featureType": [
+						"PB"
+					]
+				}
+			],
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Initiate of High Sorcery",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Wood Elf Magic",
+					"source": "XGE"
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"The distance a creature is pushed increases by 5ft, the distance an object is pushed increases by 10ft and the area cleared off of cloud-type effects increases by 5ft at levels 5, 11 and 17. "
+					]
+				}
+			]
+		},
+		{
+			"name": "Infestation",
+			"source": "MyRules",
+			"page": 158,
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a living flea"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You cause a cloud of mites, fleas, and other parasites to appear momentarily on one creature you can see within range. The target must succeed on a Constitution saving throw, or it takes {@damage 1d8} poison damage and moves 5 feet in a random direction if it can move and its speed is at least 5 feet. Roll a {@dice d4} for the direction: 1, north; 2, south; 3, east; or 4, west. This movement doesn't provoke opportunity attacks, and if the direction rolled is blocked, the target doesn't move.",
+				"The spell's damage increases by {@dice 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
+			],
+			"scalingLevelDice": {
+				"label": "poison damage",
+				"scaling": {
+					"1": "1d6",
+					"5": "2d6",
+					"11": "3d6",
+					"17": "4d6"
+				}
+			},
+			"damageInflict": [
+				"poison"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Nature Domain",
+							"shortName": "Nature",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcana Domain",
+							"shortName": "Arcana",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Strength Domain (PSA)",
+							"shortName": "Strength (PSA)",
+							"source": "PSA"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Circle of the Land",
+							"shortName": "Land",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Elf (High)",
+					"source": "PHB",
+					"baseName": "Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Elf (Kaladesh; Vahadar)",
+					"source": "PSK",
+					"baseName": "Elf (Kaladesh)",
+					"baseSource": "PSK"
+				},
+				{
+					"name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
+					"source": "SCAG",
+					"baseName": "Half-Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Kobold",
+					"source": "MPMM"
+				},
+				{
+					"name": "Merfolk (Ixalan; Blue)",
+					"source": "PSX",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Ixalan; Green)",
+					"source": "PSX",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Emeria Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Ula Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Druidic Warrior",
+					"source": "TCE",
+					"featureType": [
+						"FS:R"
+					]
+				},
+				{
+					"name": "Pact of the Tome",
+					"source": "PHB",
+					"featureType": [
+						"PB"
+					]
+				}
+			],
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Initiate of High Sorcery",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Wood Elf Magic",
+					"source": "XGE"
+				}
+			]
+		},
+		{
+			"name": "Poison Spray",
+			"source": "MyRules",
+			"page": 266,
+			"basicRules": true,
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take {@damage 1d8} poison damage and be {@condition poisoned} until the end of their next turn.",
+				"This spell's damage increases by {@dice 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
+			],
+			"scalingLevelDice": {
+				"label": "poison damage",
+				"scaling": {
+					"1": "1d12",
+					"5": "2d12",
+					"11": "3d12",
+					"17": "4d12"
+				}
+			},
+			"damageInflict": [
+				"poison"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Nature Domain",
+							"shortName": "Nature",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcana Domain",
+							"shortName": "Arcana",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Strength Domain (PSA)",
+							"shortName": "Strength (PSA)",
+							"source": "PSA"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Circle of the Land",
+							"shortName": "Land",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Elf (High)",
+					"source": "PHB",
+					"baseName": "Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Elf (Kaladesh; Vahadar)",
+					"source": "PSK",
+					"baseName": "Elf (Kaladesh)",
+					"baseSource": "PSK"
+				},
+				{
+					"name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
+					"source": "SCAG",
+					"baseName": "Half-Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Kobold",
+					"source": "MPMM"
+				},
+				{
+					"name": "Yuan-Ti",
+					"source": "MPMM"
+				},
+				{
+					"name": "Merfolk (Ixalan; Blue)",
+					"source": "PSX",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Ixalan; Green)",
+					"source": "PSX",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Emeria Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Ula Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Yuan-ti Pureblood",
+					"source": "VGM"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Druidic Warrior",
+					"source": "TCE",
+					"featureType": [
+						"FS:R"
+					]
+				},
+				{
+					"name": "Pact of the Tome",
+					"source": "PHB",
+					"featureType": [
+						"PB"
+					]
+				}
+			],
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				},
+				{
+					"name": "Initiate of High Sorcery",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Wood Elf Magic",
+					"source": "XGE"
+				}
+			],
+			"conditionInflict": [
+				"poisoned"
+			]
+		},
+		{
+			"name": "Resistance",
+			"source": "MyRules",
+			"page": 272,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 58
+				}
+			],
+			"level": 0,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a miniature cloak"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You touch one willing creature. Once before the spell ends, the target can roll {@dice 1d4} and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw and knowing the result. You can only affect one creature with this spell at any given time."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Nature Domain",
+							"shortName": "Nature",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Strength Domain (PSA)",
+							"shortName": "Strength (PSA)",
+							"source": "PSA"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Circle of the Land",
+							"shortName": "Land",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Elf (Kaladesh; Vahadar)",
+					"source": "PSK",
+					"baseName": "Elf (Kaladesh)",
+					"baseSource": "PSK"
+				},
+				{
+					"name": "Merfolk (Ixalan; Green)",
+					"source": "PSX",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Emeria Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Blessed Warrior",
+					"source": "TCE",
+					"featureType": [
+						"FS:P"
+					]
+				},
+				{
+					"name": "Druidic Warrior",
+					"source": "TCE",
+					"featureType": [
+						"FS:R"
+					]
+				},
+				{
+					"name": "Pact of the Tome",
+					"source": "PHB",
+					"featureType": [
+						"PB"
+					]
+				}
+			],
+			"feats": [
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				},
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Wood Elf Magic",
+					"source": "XGE"
+				}
+			]
+		},
+		{
+			"name": "Shillelagh",
+			"source": "MyRules",
+			"page": 275,
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "mistletoe, a shamrock leaf, and a club or quarterstaff"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"The wood of a {@item club|phb} or {@item quarterstaff|phb} you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a {@dice d8}. The weapon also becomes magical, if it isn't already. The spell ends if you cast it again or if you let go of the weapon. You can only make 1 attack with a weapon affected by this spell."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Nature Domain",
+							"shortName": "Nature",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Strength Domain (PSA)",
+							"shortName": "Strength (PSA)",
+							"source": "PSA"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Circle of the Land",
+							"shortName": "Land",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Elf (Kaladesh; Vahadar)",
+					"source": "PSK",
+					"baseName": "Elf (Kaladesh)",
+					"baseSource": "PSK"
+				},
+				{
+					"name": "Merfolk (Ixalan; Green)",
+					"source": "PSX",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Emeria Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Druidic Warrior",
+					"source": "TCE",
+					"featureType": [
+						"FS:R"
+					]
+				},
+				{
+					"name": "Pact of the Tome",
+					"source": "PHB",
+					"featureType": [
+						"PB"
+					]
+				}
+			],
+			"feats": [
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Wood Elf Magic",
+					"source": "XGE"
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"The damage die of this weapon increases by {@dice 1d8} at levels 5 ({@dice 2d8}), 11 ({@dice 3d8}) and 17 ({@dice 4d8})."
+					]
+				}
+			]
+		},
+		{
+			"name": "Shocking Grasp",
+			"source": "MyRules",
+			"page": 275,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 59
+				}
+			],
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes {@damage 1d8} lightning damage, and it can't take reactions until the start of its next turn.",
+				"This spell can be used to replace an unarmed strike opportunity attack. ",
+				"The spell's damage increases by {@dice 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
+			],
+			"scalingLevelDice": {
+				"label": "lightning damage",
+				"scaling": {
+					"1": "1d8",
+					"5": "2d8",
+					"11": "3d8",
+					"17": "4d8"
+				}
+			},
+			"damageInflict": [
+				"lightning"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcana Domain",
+							"shortName": "Arcana",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Elf (High)",
+					"source": "PHB",
+					"baseName": "Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Genasi (Air)",
+					"source": "MPMM",
+					"baseName": "Genasi",
+					"baseSource": "MPMM"
+				},
+				{
+					"name": "Kobold",
+					"source": "MPMM"
+				},
+				{
+					"name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
+					"source": "SCAG",
+					"baseName": "Half-Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Merfolk (Ixalan; Blue)",
+					"source": "PSX",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Ula Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Pact of the Tome",
+					"source": "PHB",
+					"featureType": [
+						"PB"
+					]
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Izzet Engineer",
+					"source": "GGR"
+				}
+			],
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				},
+				{
+					"name": "Initiate of High Sorcery",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Spell Sniper",
+					"source": "PHB"
+				}
+			]
+		},
+		{
+			"name": "Spare the Dying",
+			"source": "MyRules",
+			"page": 277,
+			"basicRules": true,
+			"level": 0,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You touch a living creature that has 0 or negative hit points and heal them for 1 hit dice plus their constitution modifier. The healing from this spell can not bring the creature to more than 1 hit point. This spell has no effect on undead or constructs."
+			],
+			"affectsCreatureType": [
+				"aberration",
+				"beast",
+				"celestial",
+				"dragon",
+				"elemental",
+				"fey",
+				"fiend",
+				"giant",
+				"humanoid",
+				"monstrosity",
+				"ooze",
+				"plant"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Death Domain",
+							"shortName": "Death",
+							"source": "DMG"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Grave Domain",
+							"shortName": "Grave",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "The Undying",
+							"shortName": "Undying",
+							"source": "SCAG"
+						}
+					}
+				]
+			},
+			"optionalfeatures": [
+				{
+					"name": "Blessed Warrior",
+					"source": "TCE",
+					"featureType": [
+						"FS:P"
+					]
+				},
+				{
+					"name": "Pact of the Tome",
+					"source": "PHB",
+					"featureType": [
+						"PB"
+					]
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Golgari Agent",
+					"source": "GGR"
+				}
+			],
+			"feats": [
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				},
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			]
+		},
+		{
+			"name": "Thunderclap",
+			"source": "MyRules",
+			"page": 168,
+			"otherSources": [
+				{
+					"source": "EEPC",
+					"page": 22
+				}
+			],
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You create a burst of thunderous sound that can be heard up to 100 feet away. Each creature within range, other than you, must make a Constitution saving throw or take {@damage 1d6} thunder damage. Creatures {@status concentration||concentrating} on a spell that take damage from this cantrip, roll their {@status concentration} check with disadvantage.",
+				"The spell's damage increases by {@dice 1d6} when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."
+			],
+			"scalingLevelDice": {
+				"label": "thunder damage",
+				"scaling": {
+					"1": "1d6",
+					"5": "2d6",
+					"11": "3d6",
+					"17": "4d6"
+				}
+			},
+			"damageInflict": [
+				"thunder"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Nature Domain",
+							"shortName": "Nature",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcana Domain",
+							"shortName": "Arcana",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Strength Domain (PSA)",
+							"shortName": "Strength (PSA)",
+							"source": "PSA"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Circle of the Land",
+							"shortName": "Land",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Elf (High)",
+					"source": "PHB",
+					"baseName": "Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Elf (Kaladesh; Vahadar)",
+					"source": "PSK",
+					"baseName": "Elf (Kaladesh)",
+					"baseSource": "PSK"
+				},
+				{
+					"name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
+					"source": "SCAG",
+					"baseName": "Half-Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Kobold",
+					"source": "MPMM"
+				},
+				{
+					"name": "Merfolk (Ixalan; Blue)",
+					"source": "PSX",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Ixalan; Green)",
+					"source": "PSX",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Cosi Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Emeria Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Ula Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Druidic Warrior",
+					"source": "TCE",
+					"featureType": [
+						"FS:R"
+					]
+				},
+				{
+					"name": "Pact of the Tome",
+					"source": "PHB",
+					"featureType": [
+						"PB"
+					]
+				}
+			],
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				},
+				{
+					"name": "Initiate of High Sorcery",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Wood Elf Magic",
+					"source": "XGE"
+				}
+			]
+		},
+		{
+			"name": "True Strike",
+			"source": "MyRules",
+			"page": 284,
+			"level": 0,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses and how to disable them. Your next damaging spell or attack that would be resisted by the target deals the full damage instead."
+			],
+			"miscTags": [
+				"ADV"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcana Domain",
+							"shortName": "Arcana",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Elf (High)",
+					"source": "PHB",
+					"baseName": "Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
+					"source": "SCAG",
+					"baseName": "Half-Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Kobold",
+					"source": "MPMM"
+				},
+				{
+					"name": "Merfolk (Ixalan; Blue)",
+					"source": "PSX",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Cosi Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Ula Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Pact of the Tome",
+					"source": "PHB",
+					"featureType": [
+						"PB"
+					]
+				}
+			],
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Initiate of High Sorcery",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				}
+			]
+		}
+	]
+}

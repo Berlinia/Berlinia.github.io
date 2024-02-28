@@ -1,0 +1,1217 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MOD",
+				"abbreviation": "MINE",
+				"full": "MyRules",
+				"url": "",
+				"authors": [
+					"Berlinia"
+				],
+				"convertedBy": []
+			}
+		]
+	},
+	"condition": [
+		{
+			"name": "Death's Door",
+			"source": "MOD",
+			"entries": [
+				"{@i You hear the footsteps and the trickle of sand. But you can keep fighting.}",
+				"When you drop to 0 or negative hit points, you arrive at Death's Door. While you are at Death's Door, you can still take actions and bonus actions. However:",
+				{
+					"type": "list",
+					"items": [
+						"You cannot concentrate on any spell or effect.",
+						"You cannot take reactions. During your turn, you can take an action or a bonus action, but not both.",
+						"Any effect that ends if you are incapacitated (such as a Barbarian's Rage) ends when you arrive at Death's Door, though you may manually resume such effects (i.e by re-entering a Rage).",
+						"All attack rolls against you have advantage (but are not automatically critical hits)."
+					]
+				}
+			]
+		}
+	],
+	"variantrule": [
+		{
+			"name": "Tool Profiencies",
+			"source": "MOD",
+			"ruleType": "V",
+			"entries": [
+				"Tools and their associated proficiencies have been severely changed. They are now a far more significant part of your power budget and as such have become more useful. You choose a tool proficiency during character creation which relate to your characters backstory. You can use tools you are not proficient in, however you can only use them for superficial knowledge checks (see the PHB). Proficiency is the real meat.",
+				"Tool proficiencies don't make you a professional in the desired tool. Smithy's Tools are there to quickly fix your armor and equipment, not to substitute for running a forge.",
+				"The following tools are available in the world. For the remainder of what can be found in the PHB and DMG, consider them as background features with occasional references, and invoke them as such.",
+				{
+					"type": "list",
+					"items": [
+						"{@item Poisoner's Kit|MOD}",
+						"{@item Cobbler's Tools|MOD}",
+						"{@item Alchemist's Supplies|MOD}",
+						"{@item Caligrapher's Supplies|MOD}",
+						"{@item Cook's Utensils|MOD}",
+						"{@item Jeweler's Tools|MOD}",
+						"{@item Leatherworker's Tools|MOD}",
+						"{@item Smith's Tools|MOD}",
+						"{@item Surgeon's Tools|MOD}",
+						"{@item Herbalist Tools|MOD}",
+						"{@item Thieves' Tools|MOD}",
+						"{@item Infiltration Kit|MOD}"
+					]
+				}
+			]
+		},
+		{
+			"name": "Lingering Injuries",
+			"source": "MOD",
+			"ruletype": "V",
+			"entries": [
+				"Adventuring is a dangerous business. Most adventurers are resilient enough to survive a few scrapes with death, but rarely without enduring some lasting harm along the way.",
+				"The following tables detail injuries you might receive while adventuring. These injuries are given as part of the {@variantrule GRIM} system, so you only receive them if you fail three death saves and are forced to make a Mortality roll.",
+				"If you are told to roll for a lingering injury, roll on the table corresponding to the damage type that caused you to fail your last death save. If there was more than 1 damage type involved, the DM chooses which one applies. (If the DM is ambivalent, they can simply choose whichever one did more damage.)",
+				{
+					"type": "list",
+					"name": "Injury Tables",
+					"items": [
+						"{@table Lingering Injuries: Acid|MOD|Acid}",
+						"{@table Lingering Injuries: Bludgeoning|MOD|Bludgeoning}",
+						"{@table Lingering Injuries: Cold|MOD|Cold}",
+						"{@table Lingering Injuries: Fire|MOD|Fire}",
+						"{@table Lingering Injuries: Force|MOD|Force}",
+						"{@table Lingering Injuries: Lightning|MOD|Lightning}",
+						"{@table Lingering Injuries: Necrotic|MOD|Necrotic}",
+						"{@table Lingering Injuries: Piercing|MOD|Piercing}",
+						"{@table Lingering Injuries: Poison|MOD|Poison}",
+						"{@table Lingering Injuries: Psychic|MOD|Psychic}",
+						"{@table Lingering Injuries: Radiant|MOD|Radiant}",
+						"{@table Lingering Injuries: Slashing|MOD|Slashing}",
+						"{@table Lingering Injuries: Thunder|MOD|Thunder}"
+					]
+				},
+				{
+					"name": "Treatment",
+					"type": "entries",
+					"entries": [
+						"Adventurers are adaptable and hardy. Many injuries can be recovered from through simple time and care, perhaps augmented with some healing magic. More severe injuries may require surgery- either by one of your stalwart companions, or, if you don't trust the barbarian with delicate instruments, by a city surgeon.",
+						"Many of the listed injuries can be treated with an ability check over a short or long rest. Only one ability check can be made over these rests- it's assumed that only one doctor can be operating on the patient at once, and that the treatment occupies much of the rest's time. Some injuries require {@variantrule surgery|MOD|Surgeries}, which are much more specialized operations that benefit from proficiency in the {@item Surgeon's Tools|MOD}. A Surgery check can be repeated, but every check causes the patient to lose a portion of their maximum hit points, so be careful."
+					]
+				},
+				{
+					"name": "Surgery",
+					"source": "MOD",
+					"entries": [
+						"Some {@variantrule Lingering Injuries|MOD|lingering injuries} will require treatment via Surgery, which is an advanced medical procedure. Creatures untrained in Surgery may make Surgery checks using their Wisdom (Medicine) skill.",
+						"A surgery proceeds as follows:",
+						{
+							"type": "list",
+							"style": "list-decimal",
+							"items": [
+								"Begin the surgery by identifying the surgeon, the patient, and the injury. The DM will announce the DC.",
+								"The Surgeon attempts a surgery check against the DC.",
+								"If the surgeon succeeds on the check, congratulations! The surgery successfully ends and the injury is treated.",
+								"If the surgeon fails the check, then the patient takes damage and loses maximum hit points equal to one roll of their hit dice (not including constitution modifier). If the check was failed by 5 or more, then the patient instead takes damage and loses maximum hit points equal to two rolls of their hit dice. Either way, the surgery DC then increases by 1.",
+								"The surgeon must decide whether to continue surgery. If so, repeat from step 2; otherwise, the surgery ends. The DC for a surgery only resets after the paient completes a long rest. If a patient drops to 0 hit points during the surgery, the surgery cannot continue until they are healed to 1 or more hit points."
+							]
+						},
+						"Surgery takes time- assume each check takes about 15 minutes to attempt. Bonuses and modifiers to skill checks can only apply to Surgery checks if they last at least 15 minutes; for example, the guidance spell would not affect a Surgery check but the enhance ability spell would.",
+						"When possible, it is generally to your advantage to seek out professional surgeons, doctors, or healers- they will generally have high bonuses to their Surgery checks, and particularly skilled surgeons will have advantage on their checks. Most large cities will have skilled surgeons available for hire.",
+						"However, sometimes you may have to conduct surgery yourself- some wounds are time-sensitive and require rapid treatment. You cannot perform Surgery on yourself, so it pays to have trustworthy allies."
+					]
+				},				
+				{
+					"name": "Overcoming Permanent Injuries",
+					"type": "entries",
+					"entries": [
+						"Sometimes, injuries are less \"lingering\" and more \"permanent\". Perhaps an owlbear tore your arm off, or your eyes were burnt out by an ankheg's acid. Such injuries can be crippling to an adventurer, as sharp senses and a strong physique are generally required to survive a dangerous life.",
+						"Fortunately, adventurers are nothing if not adaptable. With some time and effort, your character can find ways to cope with their injuries. A fighter might deal with the loss of their sword arm by finding a suitable prosthetic, commissioning new weaponry to adapt to their missing limb, or developing a new one-armed fighting style. A druid who loses their sight could forge a special bond with their familiar, allowing them to permanently borrow their companion's sight, even in combat.",
+						"The possibilities are many, and therefore are not mechanically defined here. Work out how your character adapts to their injuries with your DM.",
+						"It will take your character some time to adapt. They will likely not be the same as before- even as they move past the grievous harm inflicted upon them, they will still bear its mark and memory- but that's no reason your character can't continue to journey onward."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Reference",
+					"entries": [
+						"A few important terms & broad info used when describing injuries.",
+						{
+							"name": "Nonfunctional & Missing",
+							"type": "entries",
+							"entries": [
+								"{@b Nonfunctional} describes a limb or sense that has been damaged to the point where it ceases to function- a broken leg or a hand in the early stages of frostbite, for example.",
+								"{@b Missing} describes a limb or sense that is permanently detached or destroyed. A severed arm or leg is the classic example.",
+								"{@b Nonfunctional} and {@b Missing} limbs/senses have essentially the same effects (see below), but may differ in their treatment."
+							]
+						},
+						{
+							"name": "Effects of Nonfunctional and Missing Limbs",
+							"type": "entries",
+							"entries": [
+								{
+									"type": "table",
+									"caption": "Nonfunctional/Missing Eyes",
+									"colLabels": [
+										"#",
+										"Effect"
+									],
+									"colStyles": [
+										"col-2 text-center no-wrap",
+										"col-10"
+									],
+									"rows": [
+										[
+											"One Eye",
+											"You have disadvantage on Wisdom ({@skill Perception}) checks that rely on sight and on ranged attack rolls."
+										],
+										[
+											"Both Eyes",
+											"You are {@condition blinded}."
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Nonfunctional/Missing Ears",
+									"colLabels": [
+										"#",
+										"Effect"
+									],
+									"colStyles": [
+										"col-2 text-center no-wrap",
+										"col-10"
+									],
+									"rows": [
+										[
+											"One Ear",
+											"You have disadvantage on Wisdom (Perception) checks that rely on hearing."
+										],
+										[
+											"Both Ears",
+											"You are {@condition deafened}."
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Nonfunctional/Missing Limbs",
+									"colLabels": [
+										"Limb",
+										"Effect"
+									],
+									"colStyles": [
+										"col-2 text-center no-wrap",
+										"col-10"
+									],
+									"rows": [
+										[
+											"One hand/arm",
+											"You can no longer hold anything with two hands, and you can only hold a single object at a time. You have disadvantage on Strength and Dexterity based ability checks that would normally require the use of both arms (such as a Strength [Athletics] ability check made to climb, or a Dexterity ability check made to use thieves' tools). A character may be able to eliminate these penalties over time through practice and training."
+										],
+										[
+											"Both hands/arms",
+											"You can no longer hold anything. You automatically fail any ability check that normally requires the use of both arms."
+										],
+										[
+											"One foot/leg",
+											"You require assistive equipment to walk, such as a cane, crutches, or a prosthesis. Without this equipment, your speed is halved and you fall {@condition prone} after using the {@action Dash} action. You have disadvantage on Dexterity checks made to balance."
+										],
+										[
+											"Both feet/leg",
+											"You require the use of assistive equipment to move, such as a wheelchair. Without this equipment, your speed is 10 feet, you are constantly {@condition prone}, and you cannot get up from being prone."
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Nonfunctional/Missing Misc",
+									"colLabels": [
+										"Injury",
+										"Effect"
+									],
+									"colStyles": [
+										"col-2 text-center no-wrap",
+										"col-10"
+									],
+									"rows": [
+										[
+											"Smell",
+											"You cannot smell. You automatically fail any ability check that requires smell."
+										],
+										[
+											"Taste",
+											"You cannot taste. You automatically fail any ability check that requires taste."
+										],
+										[
+											"Voice",
+											"You cannot speak. You automatically fail any ability check that requires the use of your voice. You cannot use your voice to provide the verbal component of spells. You have disadvantage on Charisma ability checks unless you are proficient in gestural language or are communicating telepathically."
+										]
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "GRIM",
+			"source": "MOD",
+			"ruletype": "V",
+			"entries": [
+				"It's no secret that death saves in 5e are a little bit weird: a PC left on the ground is either ignored, in which case they bounce back up almost immediately after a {@spell healing word}, or they get double-tapped and murdered before anybody has a chance to intervene. It's a system that's often entirely dependent on the DM's mercy, and is basically held up by the DM creating reasons that the enemy doesn't just finish off a downed PC.",
+				"The following system revision, haphazardly called GRIM, is intended to give dying PCs a little more agency in their deaths while removing the factor of DM mercy from the equation.",
+				"Note that this system is pretty heavily experimental. If I feel like it's performing poorly, I may revoke/edit it during a campaign.",
+				{
+					"type": "entries",
+					"name": "Negative Hit Points",
+					"entries": [
+						"Hit points are now allowed to go negative, to a certain point. If a single instance of damage brings your hit points below 0, your hit points go negative. However, if your hit points are already 0 or negative, all subsequent hits do not decrease your hit points further; instead, they trigger death saving throws.",
+						"For example, if you have 4 hit points and a goblin stabs you for 10 damage, your hit points go to -6 rather than 0. If they stab you again, your hit points do not change, but you must make a death saving throw (detailed later). If you heal back to 2 hit points, getting attacked again could drop your hit points negative again.",
+						"If you complete a short rest, your hit points are set to 1 if they were 0 or below. This happens before you recieve any healing from hit dice.",
+						{
+							"type": "inset",
+							"name": "Death Interruption",
+							"entries": [
+								"One important exception to the negative hit points rule applies to certain death-interruption abilities, such as {@spell death ward}. Generally, if an ability activates 'when a creature drops to 0 hit points', you can assume that it can apply to any case where a creature drops to negative hit points too.",
+								"Generally, death prevention abilities should be worded in a way that avoids strange interactions, but if a specific ability is worded in a way that causes the negative hit points rule to nullify the ability's effectiveness, you should bring it up with the DM. The DM will favor rulings that preserve the original intent of the ability.",
+								"For example, an ability might be worded 'when your character drops to 0 hit points, they immediately regain 5 hit points', which would be significantly weaker due to negative hit points. In this case, we would probably simply errata the ability to read 'when your character would otherwise drop to 0 hit points or below, they instead drop to 5 hit points', or similar."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Death's Door",
+					"entries": [
+						"Going to 0 hit points (or lower) no longer knocks you unconscious or makes you start bleeding out. Instead, you arrive at {@condition Death's Door|MOD}. Unlike in 5e, you are {@i not} unconscious or incapacitated while at death's door, and you can continue to take actions under some constraints (see the {@condition Death's Door|MOD} condition).",
+						"However, if you take Massive Damage (damage which is greater than or equal to your current hit points plus your maximum hit points), you skip Death's Door and immediately collapse, as if you had failed all three saving throws (see Mortality, below).",
+						{
+							"type": "inset",
+							"name": "Recovering",
+							"entries": [
+								"Note that you don't leave Death's Door until you return to positive hit points, which requires you to first heal above any negative hit points you have. This means that small amounts of healing are less useful if you're at very negative hit points. Also, all healing now has value when you're at positive hit points- even if the healing doesn't prevent you from getting knocked below 0 in the next hit, it means your hit points will be less negative, putting you at less risk."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Death Saves",
+					"entries": [
+						"If you take damage while you are at {@condition Death's Door}, you must make a death saving throw with a DC equal to 10 or half the damage taken (whichever is higher). Death saves are still made with a +0 modifier by default, and cannot benefit from any modifiers or bonuses.",
+						"Rolling a natural 1 on a death save causes 2 failures. Rolling a natural 20 restores 2HD + Con hit points to you (although you remain at Death's Door if your hit points are still below 0).",
+						"You can no longer 'stabilize'; succeeding on death saves does nothing. You only stop making death saves if you fail 3 death saves (see \"Mortality\", below) or if you escape from Death's Door (i.e are healed above 0 hit points).",
+						"Temporary hit points don't allow you to leave Death's Door; however, any damage absorbed by temporary hit points is not counted in the death save DC calculation. (If you have 6 temp hp and you take 30 damage, you would only need to succeed on a DC 12 death saving throw rather than a DC 15). You still must make a death saving throw even if all the damage is absorbed by your temporary hit points.",
+						"{@b Death saves do not reset upon leaving Death's Door.} It takes 10 minutes of medical care from a character trained in {@skill Medicine} or {@item Surgeon's Tools|MOD}, or 20 minutes from an untrained character, to heal a death save, although no other resources are required. Death Saves also reset upon completion of a short or long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mortality",
+					"entries": [
+						"Heroes tend to be resilient- even a mortal blow doesn't necessarily mean certain death. If you fail 3 (or more) death saving throws, you must roll a single {@dice d8}, subtract the number of active wounds on your character, and reference the below table to determine what happens.",
+						"An active wound is a lingering injury that still has an active mechanical effect on your character.",
+						{
+							"type": "table",
+							"caption": "Mortality Result",
+							"colLabels": [
+								"{@dice 1d8}",
+								"Result"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"0 or less",
+									"You die."
+								],
+								[
+									"1-7",
+									"Your character survives, but suffers a severe lingering injury and is removed from the encounter. Resurrection magic can return your character back to functioning form; otherwise, they cannot meaningfully contribute until they spend at least an hour recovering."
+								],
+								[
+									"8",
+									"Your character survives without lasting harm, though they are removed from the encounter. Resurrection magic can return your character back to functioning form; otherwise, they cannot meaningfully contribute until they spend at least an hour recovering."
+								]
+							]
+						},
+						"A character knocked out of the fight remains at negative hit points when they recover, and is still at {@condition Death's Door} until they return to positive hit points. If time is not urgent, an easy way to do this is to take a short rest (see above).",
+						"{@variantrule Lingering Injuries|MOD} has the rolltables and rule outline for lingering injuries.",
+						"Note that instakill effects (like Disintegrate) subvert the Mortality roll, and still result in immediate death. Moreover, some enemies may have the Lethal ability, which ignores the Mortality roll entirely."
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Design Notes",
+					"entries": [
+						"There's a certain dilemma when it comes to death in 5e- namely that although we want the risk of death to be present in difficult combats, we also don't {@i really} want player characters to die (too often)- frequent death messes with the story, disrupts roleplay, cuts off plot threads, and trivializes death.",
+						"Oftentimes we compensate by using stakes that don't involve PC death- losing doesn't mean you {@i die} but rather you fail in an important objective. This isn't universally applicable, however, and still runs into the problem that 5e doesn't have a solid failstate in combat other than the TPK (or at least the \"everybody is unconscious\" state, which on average kills about half the party anyway).",
+						"So the mortality system is intended to first allow for a risk of death, without relying on DM mercy, but also to keep death from being too common. A 1/6 chance of dying at 3 death saves isn't that big, but it's large enough that it's a very real possibility. Most of the time, instead of dying, a character suffers a lingering wound, which requires time and care to heal.",
+						"This system also works to avoid players lying on the ground unconscious, and keeps them in the battle- which means they can keep helping, but also means they're at greater risk. This means that although players will stay conscious longer, they're also more susceptible to being knocked out of the battle entirely, as enemies will continue attacking them. This is {@i probably} okay- in the worst case it's not that different from being stabbed to death while unconscious anyway.",
+						"Negative hit points is a ruleset that will need to be watched carefully. In theory, the goal is to incentivize healing players who are at low hit points to give them a 'buffer' against negative hp, and to prevent low amounts of healing from being able to easily reset death saves (which is a large reason why 5e death saves are so non-threatening). In practice, negative hp may become too negative to heal (i.e if a low hp player endures a full dragon's breath), given 5e's rather conservative approach toward healing. We'll see if it becomes a problem."
+					]
+				}
+			]
+		}
+		
+	],
+	"item": [
+		{
+			"name": "Poisoner's Kit",
+			"source": "MOD",
+			"type": "T",
+			"rarity": "none",
+			"weight": 1,
+			"value": 5000,
+			"entries": [
+				"A poisoner's kit includes the vials, chemicals, plants and other equipment necessary for the creation of poisons.Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to craft or use poisons, as well as checks made to harvest poisons or poisonous materials.",
+				"Checks made to harvest poison often use Dexterity as the base stat, while crafting poisons is usually Intelligence.",
+				"If you are proficient, you can use a poisoner's kit create two vials of {@item basic poison|MOD|basic poison} over a long rest at no cost.",
+				"These poisons are worth no money, and expire when you take another long rest."
+			]
+		},
+		{
+			"name": "Alchemist's Supplies",
+			"source": "MOD",
+			"type": "T",
+			"rarity": "none",
+			"weight": 8,
+			"value": 10000,
+			"entries": [
+				"Alchemist's supplies contains the vials, chemicals, measuring instruments and other equipment necessary to create and identify potions. Proficiency with these tools lets you add your PB to any ability checks you make to craft or use potions.",
+				"{@bold Replicate Spell Potion.} Potions that replicate spells beyond first level require too specialized equipment and are not possible with this kit. For potions of up to first level, you need to either know the spell or have a spell scroll of the spell available and roll a succesful DC15 Intelligence (Arcana) check. Proficiency with the tools allows you to add your PB to the check.",
+				"{@bold Healing Potions.} If you are proficient, you can use Alchemist's supplies to create two vials of {@item potion of healing} over a long rest at no cost. These potions are worth no money, and expire when you take another long rest."
+			]
+		},
+		{
+			"name": "Caligrapher's Supplies",
+			"source": "MOD",
+			"type": "T",
+			"rarity": "none",
+			"weight": 1,
+			"value": 5000,
+			"entries": [
+				"Caligrapher's supplies contain all the parchment, quills, inks etc needed to produce high quality written documents. Proficiency with these tools lets you add your PB to any ability check relating to written text, determine its age, produce a forgery or identify one.",
+				"{@bold Replicate Spell Scroll.} Once per long rest, you can attempt to replicate the caligraphy in a spell scroll. You attempt an Arcana, Occult or Religion check based on the spell scroll origins, with a DC12 + the spells level. On success, you obtain a copy. This copy is worth no gold, and expires at the end of your next long rest."
+			]
+		},
+		{
+			"name": "Cobbler's Tools",
+			"source": "MOD",
+			"type": "T",
+			"rarity": "none",
+			"weight": 1,
+			"value": 1000,
+			"entries": [
+				"Although the cobbler's trade might seem too humble for an adventurer, a good pair of boots will see a character across rugged wilderness and through deadly dungeons. Proficiency with cobbler's tools conveys two primary mechanical benefits.",
+				{
+					"type": "list",
+					"items": [
+						 "{@bold Maintain Shoes.} As part of a long rest, you can repair your companions' shoes. For the next 24 hours, up to six creatures of your choice who wear shoes you worked on can travel up to 10 hours a day without making saving throws to avoid exhaustion.",
+						 "{@bold Craft Hidden Compartment.} You can craft a single hidden compartment in your boots, which can be used to hide a tiny item, or up to 10 coins."
+					]
+				}
+			]
+		},
+		{
+			"name": "Cook's Utensils",
+			"source": "MOD",
+			"type": "T",
+			"rarity": "none",
+			"weight": 1,
+			"value": 1000,
+			"entries": [
+				"Adventuring is a hard life. With a cook along on the journey, your meals will be much better than the typical mix of hardtack and dried fruit. You also are familiar with how food ought to taste like, being able to more easily spot any poisons in your plate.",
+				"Proficiency with the cook's utensils provides the following mechanical benefits.",
+				{
+					"type": "list",
+					"items": [
+						 "{@bold Nourishing Meals.} As part of a short rest, you and five other creatures regain PB additional hitpoints.",
+						 "{@bold Full Stomach.} The first time you roll on a check to get Exhaustion for traveling over 8 hours, you do so with advantage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Jeweler's Tools",
+			"source": "MOD",
+			"type": "T",
+			"rarity": "none",
+			"weight": 1,
+			"value": 10000,
+			"entries": [
+				"A diamond is rough, it takes someone with the skills and knowledge to make it shine. Jeweler's tools are used to identify the properties of a particular gemstone and determine its value, history and purpose.",
+				"Proficiency with these tools provides the following mechanical benefits.",
+				{
+					"type": "list",
+					"items": [
+						 "{@bold Enhance Gemstone.} Once per long rest, choose one gem that is used as a material component for a spell. You spend time polishing the gem, doubling its value. This procedure is however only temporary, and lasts until the next long rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Leatherworker's Tools",
+			"source": "MOD",
+			"type": "T",
+			"rarity": "none",
+			"weight": 1,
+			"value": 5000,
+			"entries": [
+				"A leatherworker's tools are the primary tool for maintaining and using light armor.",
+				"Proficiency with these tools provides the following mechanical benefits.",
+				{
+					"type": "list",
+					"items": [
+						 "{@bold Repair Armor.} You can spend a short rest to repair damage dealt to non-magical light or medium armor, as long as its not been fully destroyed.",
+						 "{@bold Enhance Armor.} Once per long rest, choose one set of light armor. You spend 10 minutes reinforcing it, granting its wearer +1 AC. The reinforcement is temporary, and lasts for 2 hours."
+					]
+				}
+			]
+		},
+		{
+			"name": "Smith's Tools",
+			"source": "MOD",
+			"type": "T",
+			"rarity": "none",
+			"weight": 1,
+			"value": 10000,
+			"entries": [
+				"A set of smith's tools contain a set of hammers, tongs, and other basic portable supplies. It's no substitute for a true forge, but it allows basic repairs and maintenance to be done on the go.",
+				"Proficiency with these tools provides the following mechanical benefits.",
+				{
+					"type": "list",
+					"items": [
+						 "{@bold Repair Armor.} You can spend a short rest to repair damage dealt to non-magical medium or heavy armor, as long as its not been fully destroyed.", 
+						 "{@bold Enhance Armor.} Once per long rest, choose one set of heavy armor. You spend 10 minutes reinforcing it, granting its wearer +1 AC. The reinforcement is temporary, and lasts for 1 hour."
+					]
+				}
+			]
+		},
+		{
+			"name": "Surgeon's Tools",
+			"source": "MOD",
+			"type": "T",
+			"rarity": "none",
+			"weight": 1,
+			"value": 1000,
+			"entries": [
+				"A surgeon's kit contains a set of scalpels, bandages, and other medical equipment. Ideally one never needs to use this kit, but adventuring is a risky business.",
+				"Proficiency with surgeon's tools allow you to add your proficiency bonus to {@skill Surgery|MOD}, which are made to treat {@variantrule Lingering Injuries|MOD}. Surgery checks usually use Intelligence or Dexterity as the base stat."
+			]
+		},
+		{
+			"name": "Herbalist Tools",
+			"source": "MOD",
+			"type": "T",
+			"rarity": "none",
+			"weight": 1,
+			"value": 1000,
+			"entries": [
+				"This kit contains a variety of instruments needed to harvest and make use of the local flora. You can use it to identify plants and their various medicinal or other properties.",
+				"Proficiency with these tools gives the following mechanical effects.",
+				{
+					"type": "list",
+					"items": [
+						 "{@bold Medicinal Salve.} Once per long rest, you can spend an action to apply a medicinal salve on a creature, ending the {@condition poisoned|DMG} condition on them.", 
+						 "{@bold Herbal Tea.} You can create 2 doses of {{@item Potion of Poison Resistance|DMG|herbal tea} at no cost. This tea is non-magical, and loses its potency at the end of your next long rest."
+					]
+				}
+			]	
+		},
+		{
+			"name": "Thieves' Tools",
+			"source": "MOD",
+			"type": "T",
+			"rarity": "none",
+			"weight": 1,
+			"value": 1000,
+			"entries": [
+				"This shady piece of equipment contains a variety of instruments needed to disarm traps and unlock doors silently. Proficiency with these tools gives the following benefits.",
+				{
+					"type": "list",
+					"items": [
+						 "{@bold Skeleton Key.} Once per long rest, you can create a skeleton key. This key allows you to automatically succeed on a lockpicking check against a mundane lock.",
+						 "{@bold Locks and Traps} You can add your proficiency modifier on lockpicking and disarming checks.",
+						 "{@bold Trap Knowledge.} You can add your proficiency bonus on checks to discern if an area is trapped"
+					]
+				}
+			]	
+		},
+		{
+			"name": "Infiltration Kit",
+			"source": "MOD",
+			"type": "T",
+			"rarity": "none",
+			"weight": 1,
+			"value": 1000,
+			"entries": [
+				"Sometimes, you need to get in to get the job done. The Infiltrator's kit contains make-up, props and other paraphernalia used to disguise yourself and the party. Proficiency in this kit has the following mechanical benefits.",
+				{
+					"type": "list",
+					"items": [
+						 "{@bold Group Disguise.} Once per day, you can spend 1h to disguise up to 5 people. While wearing this disguise, creatures have advantage on Charisma checks to maintain the ruse.",
+						 "{@bold Group Documents.} Once per day, you can spend 1h to produce up to 5 mundane forgery documents. You can produce an invitation, letters of passage or other items used to infiltrate facilities. These items aren't perfect, and the more cautious the observer the easier it is to spot the errors. Entrance to a nobles party is one thing, but deed of a house another."
+					]
+				}
+			]	
+
+		},
+		{
+			"name": "basic poison",
+			"source": "MOD",
+			"type": "T",
+			"rarity": "none",
+			"weight": 1,
+			"value": 0,
+			"entries": [
+				"A basic poison has three primary uses.",
+				{
+					"type": "list",
+					"items": [
+						"Coat a one melee weapon or three pieces of ammunition using a bonus action, which lasts for 1 minute. On hit with such a weapon, the target needs to succeed on a {@savingThrow con 10} +PB, or take {@dice 1d6} poison damage.",
+						"Make someone consume the full vial. They then need to succeed on a {@savingThrow con 13} +PB or take {@dice 3d6} poison damage and be {@condition poisoned}",
+						"Single dose (contains 3), requiring a {@savingThrow con 10} +PB or be {@condition poisoned}"
+					]
+				}
+			]
+		}
+	],
+	"table": [
+		{
+			"name": "Lingering Injuries: Acid",
+			"source": "MOD",
+			"type": "table",
+			"caption": "Acid Injury",
+			"colLabels": [
+				"d12",
+				"Injury"
+			],
+			"colStyles": [
+				"col-2 text-center no-wrap",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"{@b Ocular Corrosion.} Acid has splashed over both of your eyes. You are blinded and both your eyes are {@b nonfunctional}. If you do not receive surgery within 7 days, your vision will be permanently missing. Requires a DC 20 Surgery to treat."
+				],
+				[
+					"2",
+					"{@b Dissolved Limb.} Acid coats one of your limbs, and you hear the sizzle as it starts to dissolve. This limb is {@b nonfunctional}; if you do not recieve surgery within 7 days, the limb dissolves away and is {@b missing}. Requires a DC 20 Surgery to treat."
+				],
+				[
+					"3",
+					"{@bold Vocal Cord Damage} The acid's caustic fumes have wreaked havoc on your vocal cords. Your voice is nonfunctional and you are {@condition silenced}. Requires a DC 17 Surgery to treat."
+				],
+				[
+					"4",
+					"{@bold Dissolved Magic.} The acid has eaten into the essence of one of your magic items, expelling its arcane energy and rendering it mundane. One random magic item on your person (prioritizing attuned, worn, and wielded items) loses its magic. A master craftsman can potentially restore the item. A legendary or artifact item is instead suppressed for 3 long rests."
+				],
+				[
+					"5-6",
+					"{@bold Corroded Armor.} Your armor takes a -3 penalty to the AC it provides until repaired. If its base AC is reduced to 10 or lower, it is destroyed. (If your armor is magical, it cannot be destroyed by this injury, but is rendered useless if brought to 10 base AC or lower until repaired). If you are wearing no armor, treat this result as a 9."
+				],
+				[
+					"7-8",
+					"{@bold Corroded Weapon.} The acid eats away at your weapon or spellcasting focus. Whatever weapon or focus you are wielding takes a -3 penalty to all attack rolls, damage rolls, and saving throw DCs (for spellcasting foci)."
+				],
+				[
+					"9-10",
+					"{@bold Caustic Burn.} The acid has left you with a painful burn. You take 1 point of acid damage for every 5 feet you move while in initative, or while exerting yourself (i.e running away). A DC 16 Medicine check made over a long rest ends this effect."
+				],
+				[
+					"11-12",
+					"{@bold Scaly Scar.} The acid injury has resulted in a gnarled and scaly scar."
+				]
+			]
+		},
+		{
+			"name": "Lingering Injuries: Bludgeoning",
+			"source": "MOD",
+			"type": "table",
+			"caption": "Bludgeoning Injury",
+			"colLabels": [
+				"d10",
+				"Injury"
+			],
+			"colStyles": [
+				"col-2 text-center no-wrap",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"{@b Ruptured Eardrum.} A violent impact to the side of your head causes one of your eardrums to rupture, rendering the ear {@b nonfunctional}. If not treated within 7 days, it is permanently {@b missing}. Treat with a DC 20 Surgery."
+				],
+				[
+					"2",
+					"{@b Crushed Limb.} One of your limbs is crushed to the point of uselessness and is permanently {@b nonfunctional}. It will not regain functionality without treatment. Treat with a DC 23 Surgery."
+				],
+				[
+					"3",
+					"{@bold Serious Concussion.} A strike to your head has left you with dizziness, nausea, and a lingering headache. You have disadvantage on mental ability checks and Concentration saving throws. Every time you fail a mental saving throw, there is a 50% chance you are {@condition stunned} until the end of your next turn. This concussion lingers for 2 long rests."
+				],
+				[
+					"4",
+					"{@bold Broken Limb.} One of your limbs is broken, rendering it {@b nonfunctional} for 2 long rests."
+				],
+				[
+					"5-6",
+					"{@bold Mild Concussion.} You have disadvantage on mental ability checks and Concentration saving throws. This injury lasts for 2 long rests, and can be treated with a DC 15 Medicine check over a long rest."
+				],
+				[
+					"7-8",
+					"{@bold Cracked Rib.} One or more of your ribs is cracked. Any time you make an Athletics or Acrobatics check, you take {@damage 1d8} bludgeoning damage. This injury resolves on its own after 2 long rests."
+				],
+				[
+					"9-10",
+					"{@bold Serious Bruise.} Your entire body aches and you are left with some extensive ugly bruises. You have disadvantage on Persuasion checks. These bruises heal on their own after 2 long rests."
+				],
+				[
+					"11-12",
+					"{@bold Minor Bruise.} You are left with a lingering but harmless bruise."
+				]
+			]
+		},
+		{
+			"name": "Lingering Injuries: Cold",
+			"source": "MOD",
+			"type": "table",
+			"caption": "Cold Injury",
+			"colLabels": [
+				"d10",
+				"Injury"
+			],
+			"colStyles": [
+				"col-2 text-center no-wrap",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"{@b Frozen Limb.} One of your limbs is frozen solid, and is essentially {@b nonfunctional}. The limb heals automatically if you spend a long rest warming it. However, if you are struck by a critical hit before then, the limb shatters and is {@b missing}."
+				],
+				[
+					"2",
+					"{@b Frozen Voice.} You've breathed in so many cold vapors that your throat is beginning to freeze solid. You have disadvantage on Persuasion, Deception, and Intimidation checks that involve speaking, and whenever you cast a spell with a Verbal component, there is a 50% chance that it fails, wasting the action. If treated with a DC 20 Medicine check, it heals after a long rest. If left untreated, there is a 50% chance that the injury heals on its own after a long rest, and a 50% chance that the injury progresses further, rendering your vocal cords permanently {@b nonfunctional}."
+				],
+				[
+					"3",
+					"{@bold Pervasive Cold.} You are under the effects of the {@spell slow} spell until you spend a long rest slowly rewarming yourself."
+				],
+				[
+					"4",
+					"{@bold Weakened Constitution.} The cold has weakened your body, leaving you weak and frail. Your Constitution score is reduced by 3, to a minimum of 1. Every time you complete a long rest, your Constitution score heals by 1."
+				],
+				[
+					"5-6",
+					"{@bold Slowed Reflexes.} The cold has seeped into your nerves, causing you to become slow and sluggish. You have disadvantage on initiative checks and Dexterity saving throws. Treat with a DC 15 Medicine check over a long rest."
+				],
+				[
+					"7-8",
+					"{@b Frost Nipped Toes.} Your feet are frozen over. You cannot take the {@action Dash} action until treated. Treat with a DC 18 Medicine check over a short rest."
+				],
+				[
+					"9-10",
+					"{@bold Shivers.} Your hands shake uncontrollably and your voice quavers as you speak. You have disadvantage on checks that involve fine manipulation of objects, as well as Persuasion, Deception, and Intimidation checks. This injury heals itself naturally after completing two long rests."
+				],
+				[
+					"11-12",
+					"{@bold Frozen Scar.} You are left with a pale, blue-tinged scar."
+				]
+			]
+		},
+		{
+			"name": "Lingering Injuries: Fire",
+			"source": "MOD",
+			"type": "table",
+			"caption": "Fire Injury",
+			"colLabels": [
+				"d10",
+				"Injury"
+			],
+			"colStyles": [
+				"col-2 text-center no-wrap",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"{@b Third Degree Burn.} You have a deep burn penetrating into your skin, resulting in a cracked, red wound. While in initiative or exerting yourself, you take 1 fire damage for every 5 feet of movement. In addition, you take 1d4 fire damage every time you take an action or bonus action. This injury heals naturally after two long rests."
+				],
+				[
+					"2",
+					"{@b Airway Burn.} You've inhaled the scorching air around you and it burns a path straight down to your lungs. Your sense of taste and smell are {@b nonfunctional} and if not treated within 7 days will be permanently {@b missing}. Treat with a DC20 Surgery."
+				],
+				[
+					"3",
+					"{@bold Welded Armor.} Your armor half-melts in the heat and partially melds into your skin. Until fixed, you cannot doff your armor, and your armor cannot undergo any sort of modification or improvement until it is removed. Sleeping in medium or heavy armor is uncomfortable- see {@variantrule sleeping|MOD|Sleeping in Armor} If you are not wearing armor, reroll the injury."
+				],
+				[
+					"4",
+					"{@bold Heat Stroke.} You gain two levels of {@condition exhaustion}."
+				],
+				[
+					"5-6",
+					"{@bold Second Degree Burn.} Your skin bubbles and blisters. While in initiative or exerting yourself, you take 1 fire damage for every 5 feet of movement. This injury lasts 2 long rests. A DC 12 Medicine check made over a long rest reduces the duration by 1 long rest."
+				],
+				[
+					"7-8",
+					"{@bold Disfiguring Scars.} A large burn scar disfigures your face, imposing disadvantage to Persuasion checks but granting you advantage on Intimidation checks. The scar can be treated by a DC 15 Surgery administered within 24 hours; if successful, this injury instead becomes a Mild Burn (11-12)."
+				],
+				[
+					"9-10",
+					"{@bold Heat Exhaustion.} You gain one level of {@condition exhaustion}, which can be cured as normal."
+				],
+				[
+					"11-12",
+					"{@bold Mild Burn.} You've been left with a disfiguring but otherwise harmless patch of burnt skin."
+				]
+			]
+		},
+		{
+			"name": "Lingering Injuries: Force",
+			"source": "MOD",
+			"type": "table",
+			"caption": "Force Injury",
+			"colLabels": [
+				"d10",
+				"Injury"
+			],
+			"colStyles": [
+				"col-2 text-center no-wrap",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"{@b Third Eye Blinded.} Something vital, yet intangible within you falls deathly silent. You feel... disconnected. You lose the ability to communicate telepathically, and all magical communication that specifically targets you fails (such as the {@spell message}, {@spell sending}, and {@spell telepathic bond} spells. Your mind cannot be magically read."
+				],
+				[
+					"2",
+					"{@b Magical Anathema.} You shake your head from the force of the arcane blow and... it's gone- the knowledge, that is, not your head. You lose the ability to cast your most recently cast spell permanently. You can never cast this spell again by any means (including class features, racial traits, or magical items). If your class allows you to replace spells on your spell list when leveling up, you may still replace this spell normally. If you are not a spellcaster, treat this roll as an 11."
+				],
+				[
+					"3",
+					"{@bold Pertinax Machina.} Your spells struggle to take and always seem like they need a little something extra. Any spell with material component cost requires double that cost to cast. This effect lasts until cured by a {@spell greater restoration|MOD} spell. If you are not a spellcaster, treat this roll as an 11."
+				],
+				[
+					"4",
+					"{@bold Null Arcana.} As the arcane energy strikes you, something in you sputters and fizzles. Every spell you cast has a 50% chance of failure, wasting the action and slot. This lasts for 2 long rests."
+				],
+				[
+					"5-6",
+					"{@bold Ligo Secare.} You feel the abrupt and disconcerting recoin of a severed connection. You lose attunement to all items you are currently attuned to, and you cannot attune to anything until you complete 2 long rests."
+				],
+				[
+					"7-8",
+					"{@bold Mana Syphon.} You feel the energy suck away your arcan eessence, leaving you with a lingering feeling of emptiness. Two of your highest level spell slots are harmlessly expended, and cannot be regained for 3 long rests. A DC 18 Arcana check made over a long rest can reduce the duration by 1 long rest. If you are not a spellcaster, treat this roll as an 11."
+				],
+				[
+					"9-10",
+					"{@bold Null Scola.} You feel the magic pulse and resonate with the arcane residue that clings to you from the last spell you cast. There's a searing feeling deep in your mind. You lose the ability to cast spells from the same school of magic as the most recent spell you've cast for 3 long rests. If you are not a spellcaster, treat this roll as an 11."
+				],
+				[
+					"11-12",
+					"{@bold Mana Burn.} You are left with a dimly glowing but otherwise harmless magical scar that emits wisps of arcane energy."
+				]
+			]
+		},
+		{
+			"name": "Lingering Injuries: Lightning",
+			"source": "MOD",
+			"type": "table",
+			"caption": "Lightning Injury",
+			"colLabels": [
+				"d10",
+				"Injury"
+			],
+			"colStyles": [
+				"col-2 text-center no-wrap",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"{@b Arrythmia.} Electricity surges into the core of your being, causing your heart to stutter. It is far more difficult for you to handle physical activity without becoming greatly fatigued. Whenever you gain exhaustion, you take one additional level. Treat with a DC 22 Surgery."
+				],
+				[
+					"2",
+					"{@b Heart Palpitations.} Shocked through the heart, and you're to blame... Any time you are {@condition charmed} or {@condition frightened}, you must succeed on a DC 20 Constitution saving throw or gain 1 level of {@condition exhaustion}. Treat with a DC 22 Surgery."
+				],
+				[
+					"3",
+					"{@bold Personality Shift.} Your brain is damaged by the electrical surge, and you're not acting like yourself. You either gain a new {@i flaw}, or an existing flaw intensifies. DC 25 Surgery to treat."
+				],
+				[
+					"4",
+					"{@bold Muscle Avulsion.} Your muscle has contracted so strongly that it has been torn free of the bone. One of your limbs is {@b nonfunctional} until treated with a DC20 Surgery."
+				],
+				[
+					"5-6",
+					"{@bold Muscle Spasms.} Your muscles twitch in reptitive patterns and you have difficulty coordinating your movement. You have disadvantage on all Dexterity attacks, checks, and saves for 3 long rests. Treat with a DC 15 Medicine check to reduce duration by 1 long rest."
+				],
+				[
+					"7-8",
+					"{@bold Numbed Nerves.} Your nerves are shot and you feel numb. You cannot take reactions. Treat with a DC 20 Medicine check over a short rest."
+				],
+				[
+					"9-10",
+					"{@bold Lightning Rod.} Your skin feels oddly conductive. Whenever another creature takes lightning damage within 5 feet of you, you take an equal amount of lightning damage. Treat with a DC 17 Medicine check over a long rest."
+				],
+				[
+					"11-12",
+					"{@bold Lictenburg Figure.} You are left with a scar resembling lightning, running along the path the current took through your body."
+				]
+			]
+		},
+		{
+			"name": "Lingering Injuries: Necrotic",
+			"source": "MOD",
+			"type": "table",
+			"caption": "Necrotic Injury",
+			"colLabels": [
+				"d10",
+				"Injury"
+			],
+			"colStyles": [
+				"col-2 text-center no-wrap",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"{@b Cursed by Fate.} A malicious curse settles upon your soul. While cursed, you treat any 20 you roll as a 1. This curse is resistant to restorative effects; any attempt to cure it must succeed on a DC 20 spellcasting check to succeed."
+				],
+				[
+					"2",
+					"{@b Tenuous Grip on Life.} You feel like you've seen the face of death, and can recall her grim visage with ease. You now require one less failed death saving throw before you must make a Mortality roll. This injury heals on its own after completing 3 long rests."
+				],
+				[
+					"3",
+					"{@bold Corrupted Vitality.} You can no longer recieve magical healing. Treat with a DC 25 Religion check over a long rest."
+				],
+				[
+					"4",
+					"{@bold Withering.} For every minute another creature spends near you, they take 1 necrotic damage. Nonmagical plants around you wilt in that same time."
+				],
+				[
+					"5-6",
+					"{@b Malevolence.} A small mote of corrupt power has taken residence within you, and you feel a tiny part of your soul become unhinged. You gain a {@i flaw} that would be considered malevolent, violent, cruel, or volatile."
+				],
+				[
+					"7-8",
+					"{@bold Necrotic Wound.} Your wound festers with a dark energy that resists both magical and natural healing. Your maximum hit points are reduced by the amount of damage that caused you to fail your last death save. Treat with a DC 18 Surgery."
+				],
+				[
+					"9-10",
+					"{@bold Chronoscarred.} Every cell in your body protests as they are assaulted by the flow of time. Your body suddenly ages {@dice 2d10} years. Your mind is unaffected."
+				],
+				[
+					"11-12",
+					"{@bold Deathly Wound.} You gain an obvious, gaping wound- a hole through your body, or a chunk gnawed out of your arm. Despite the apparent egregious injury, it doesn't seem to hurt at all, though it certainly draws a lot of attention."
+				]
+			]
+		},
+		{
+			"name": "Lingering Injuries: Piercing",
+			"source": "MOD",
+			"type": "table",
+			"caption": "Piercing Injury",
+			"colLabels": [
+				"d10",
+				"Injury"
+			],
+			"colStyles": [
+				"col-2 text-center no-wrap",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"{@b Gouged Eye.} You've taken heavy damage directly to one of your eyes. Your eye is {@b nonfunctional}. If untreated within 5 days, your vision will be beyond saving and considered {@b missing}. Treat with a DC 20 Surgery."
+				],
+				[
+					"2",
+					"{@b Sharp Residue.} The triggering attack has left something buried in your body- an arrowhead, a tooth, a shard from a sword, perhaps. You can feel it cutting inside you. Any time you use a action, bonus action, and movement on the same turn, you are incapacitated until the end of your next turn. Treat with a DC 19 Surgery."
+				],
+				[
+					"3",
+					"{@bold Infection.} The wound closes easily, but the attack has left an insidious contamination deep inside. At the end of every long rest, you lose maximum hit points equal to two rolls of your class's hit die. If this effect reduces your hit points to 0, you die. You can cure the infection by making a DC 22 Constitution saving throw or a DC 17 Medicine check over a long rest, but this only treats the infection, not the max hit point reduction."
+				],
+				[
+					"4",
+					"{@bold Perforated Gut.} You've taken a nasty wound in the gut, and it's only a matter of time until it turns septic. you are {@condition poisoned}. Every 3 days, you gain 1 level of {@condition exhaustion}. This level of exhaustion cannot be removed by nonmagical means. A DC 21 Surgery will treat the wound, and any effect that cures disease can remove 1 level of exhaustion from this injury. The poisoned condition cannot be cured until the infection is treated."
+				],
+				[
+					"5-6",
+					"{@bold Punctured Leg.} The attack sinks into the meat of your leg. It's probably not serious, but the pain makes you treat your leg gingerly. Your speed is reduced by 10 feet. Treat with a DC 14 Medicine check over a long rest."
+				],
+				[
+					"7-8",
+					"{@bold Ran Through.} The attack went in one end and out the other. It's missed your vitals, but you can still feel the pain every time you move. All bonus actions now require a full action instead. Treat with a DC 15 Medicine check over a long rest."
+				],
+				[
+					"9-10",
+					"{@bold Punctured Lung.} The wound makes it past your ribs and into your lung. You make Strength (Athletics) and Dexterity (Acrobatics) checks at disadvantage for 2 long rests."
+				],
+				[
+					"11-12",
+					"{@bold Gnarled Scar.} You are left with a raised, gnarled scar."
+				]
+			]
+		},
+		{
+			"name": "Lingering Injuries: Poison",
+			"source": "MOD",
+			"type": "table",
+			"caption": "Poison Injury",
+			"colLabels": [
+				"d10",
+				"Injury"
+			],
+			"colStyles": [
+				"col-2 text-center no-wrap",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"{@b Anemic.} When the poison has run its course, you are left with a lingering weakness. Your carrying capacity is halved. This can be cured by the {@spell greater restoration|MOD} spell or similar magic."
+				],
+				[
+					"2",
+					"{@b Cyanotic.} Your lips turn blue, you're out of breath, and you feel like you can't suck in enough air no matter how hard you try. You suffer three levels of {@condition exhaustion}."
+				],
+				[
+					"3",
+					"{@bold Numbed Senses.} The poison wreaks havoc on your body. Either your sense of smell or taste (determined randomly) is {@b nonfunctional}. Treat with a DC 15 Survival check over a long rest- on a failure, the sense becomes permanently {@b missing}."
+				],
+				[
+					"4",
+					"{@bold Blurred Vision.} Your eyes cloud over, your vision blurs, and distinct shapes become amorphous blobs. You have disadvantage on Wisdom (Perception) checks relying on vision and all ranged attacks until treated. Treat with a DC 15 Medicine check over a long rest."
+				],
+				[
+					"5-6",
+					"{@bold Weak in the Knees.} Your stamina collapses. If you try to travel for more than an hour at a time, you gain a level of exhaustion. Every time you take a short rest, you can make a DC 18 Constitution saving throw, ending this effect on a success."
+				],
+				[
+					"7-8",
+					"{@bold Nausea.} You feel a sick, oily feeling deep in your stomach, and bile rolling up your throat. You have disadvantage on all ability checks. Treat with a DC 16 Medicine check over a short rest."
+				],
+				[
+					"9-10",
+					"{@bold Aberrant Interaction.} Any time you drink a potion, there is a 50% chance that it interacts poorly with the lingering poison in your body. If this happens, the potion has no effect and you take {@damage 2d8} poison damage. Treat with a DC 19 Medicine check over a long rest."
+				],
+				[
+					"11-12",
+					"{@bold Sickly Tinge.} Your skin develops a slight yellow-green, unhealthy tinge. This fades away after 2d4 long rests."
+				]
+			]
+		},
+		{
+			"name": "Lingering Injuries: Psychic",
+			"source": "MOD",
+			"type": "table",
+			"caption": "Psychic Injury",
+			"colLabels": [
+				"d10",
+				"Injury"
+			],
+			"colStyles": [
+				"col-2 text-center no-wrap",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"{@b A Taste of Madness.} You develop a long-term madness, which lasts until treated with a successful DC 19 Insight check by another creature over a long rest. On a failed check, the madness becomes permanent (though it may be cured by {@spell greater restoration} or similarly powerful magic)."
+				],
+				[
+					"2",
+					"{@b Crippling Phobia.} Unconsciously, your brain has made a connection between something random and the pain it felt, and now you cannot help but associate the two. The DM chooses something about the source of the damage or the setting. Any time you move within 15 feet of this phobia, you are {@b frightened} until you move at least 50 feet away from it."
+				],
+				[
+					"3",
+					"{@bold Tower of Babel.} The language center of your brain has fried. You lose proficiency in all languages, and you cannot read or write; all communication sounds like a garbled string of random words. Verbal components of spells automatically fail. This injury lasts until treated with a DC 20 Insight check over a long rest, and can be temporarily suppressed by a {@spell calm emotion} spell."
+				],
+				[
+					"4",
+					"{@b Psychic Disruption.} Your mental focus is shattered. You lose the ability to use all Psionic abilities, including telepathy and any ability that mentions 'psi' in the name or description. Treat with a DC 22 Surgery."
+				],
+				[
+					"5-6",
+					"{@bold Headache.} Your head throbs and the light aggravates you. You cannot benefit from a short rest until you complete a long rest."
+				],
+				[
+					"7-8",
+					"{@bold Minor Amnesia.} You feel like you've forgotten something. You lose proficiency in one skill, chosen randomly. Treat by spending a long rest re-training that proficiency."
+				],
+				[
+					"9-10",
+					"{@bold Paranoia.} You find it difficult to stop being distracted by the feeling that there is someone or something out to get you. Whenever you must maintain concentration, roll {@dice 1d4}. This is the maximum amount of rounds you may maintain concentration for that spell or effect. Treat with a DC 16 Insight check administered by another creature over a long rest."
+				],
+				[
+					"11-12",
+					"{@bold Nothing.} No injury! Seems almost too good to be true."
+				]
+			]
+		},
+		{
+			"name": "Lingering Injuries: Radiant",
+			"source": "MOD",
+			"type": "table",
+			"caption": "Radiant Injury",
+			"colLabels": [
+				"d10",
+				"Injury"
+			],
+			"colStyles": [
+				"col-2 text-center no-wrap",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"{@b Penitent Mercy.} You've lost your stomach for killing. The thought of taking a life fills you with abject discust. You can no longer willingly take a life, and if you kill a living creature, you immediately gain a level of {@condition exhaustion}."
+				],
+				[
+					"2",
+					"{@b Searing Light.} Your eyes are suffused with a horrid, blinding light. You emit bright light to a radius of 10 feet and dim light for another 10 feet, and both of your eyes are {@b nonfunctional}. Treat with a DC 20 Surgery. The {@spell darkness} spell cast on your eyes suppresses the blindness temporarily."
+				],
+				[
+					"3",
+					"{@bold Purged Soul.} Your soul is partially severed from your body, leaving it exposed and vulnerable. If you die before this is treated, your soul is claimed, and you cannot be resurrected by any means short of a {@spell wish|MOD} spell. Treat with a DC 25 Religion check over a long rest."
+				],
+				[
+					"4",
+					"{@bold Irradiated.} The energy that has washed over you has left you with a lingering feeling of sickness and nausea. You are {@condition poisoned}, and every time you take a short or long rest, you lose {@dice 2d8} maximum hit points. You die if this reduces your hit point maximum to 0. Treat with a DC 25 Medicine check over a long rest. Successful treatment of this wound stops your maximum hit points from being reduced further, but does not cure the maximum hit points reduction already afflicted."
+				],
+				[
+					"5-6",
+					"{@bold Seen the Light.} You feel as if you've seen a glimpse of something greater than yourself, and a tiny mote of that light has come to rest on your soul. You gain a flaw that would be considered benevolent, self-sacrificing, unyielding, or militant."
+				],
+				[
+					"7-8",
+					"{@bold Sunburn.} The light sears a painful red burn into your skin. You take 1 radiant damage for every 10 feet of movement while in combat. This injury lasts until you complete a long rest."
+				],
+				[
+					"9-10",
+					"{@bold Unearthly Glow.} You are afflicted by a dull, yellow-green glow. This glow causes you to emit dim light for 10 feet. Attack rolls against you have advantage as long as the attacker can see you, and you cannot benefit from being {@condition invisible}. Treat over a long rest with a DC 18 Religion check."
+				],
+				[
+					"11-12",
+					"{@bold Radiant Scar.} Your body now bears a glowing scar that looks like a crack in the skin, which leaks a bright light. You emit bright light in a 5 foot radius and dim light for an additional 5 feet. Even if you attempt to cover it with cloth or armor, the light is still clearly visible underneath the coverings."
+				]
+			]
+		},
+		{
+			"name": "Lingering Injuries: Slashing",
+			"source": "MOD",
+			"type": "table",
+			"caption": "Slashing Injury",
+			"colLabels": [
+				"d10",
+				"Injury"
+			],
+			"colStyles": [
+				"col-2 text-center no-wrap",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"{@b Severed Limb.} One of your limbs has been sliced clean off. It lands severed at your feet and is {@b missing}. Treat with a DC 20 Surgery. The DC increases by 1 for every day that passes."
+				],
+				[
+					"2",
+					"{@bold Stubborn Bleeding.} The wound simply won't close. For every hour that passes, you lose 1 hit point. Treat with a DC 22 Surgery. Receiving at least 5 points of magical healing seals the wound for 24 hours."
+				],
+				[
+					"3",
+					"{@bold Blood Loss.} You've lost a {@i lot} of blood, and are feeling quite weak. You take a -3 penalty to all ability checks, saving throws, attack rolls, and to the save DCs of any of your features. This penalty is reduced by 1 every time you complete a long rest; a successful DC 20 Medicine check over a long rest reduces it by 1 more."
+				],
+				[
+					"4",
+					"{@bold Severed Nerves.} Some of your nerves have been cut- leaving you in excruciating pain. You cannot maintain concentration on spells and effects, and the first time per round you make an attack or cast a spell, you take {@damage 1d8} piercing damage. Treat with a DC 22 Surgery"
+				],
+				[
+					"5-6",
+					"{@b Severed Appendage.} You're almost {@i impressed} with the accuracy of that blow- it takes a lot of skill to take a nose or a ear clean off. You'd be more impressed if you weren't suddenly missing a body part. One of your ears or your nose is cut clean off, and is considered {@b missing}. Reattach with a DC 20 Surgery; the DC increases by 1 for every day that passes."
+				],
+				[
+					"7-8",
+					"{@bold Slashed Hamstring.} A nasty gash through the leg. Your speed is halved. Treat with a DC 15 Medicine check over a long rest."
+				],
+				[
+					"9-10",
+					"{@bold Festering Wound.} The wound looks angyr near the edges, and stubbornly refuses to heal. You cannot heal hit points through any nonmagical means, such as a long or short rest. Treat with a DC 18 Medicine check over a long rest (though if cured over a long rest, you still regain no hit points from that rest.)"
+				],
+				[
+					"11-12",
+					"{@bold Roguish Scar.} You have a long, thin scar somewhere on your body. It gives you a slightly roguish look, though acquiring more is not recommended."
+				]
+			]
+		},
+		{
+			"name": "Lingering Injuries: Thunder",
+			"source": "MOD",
+			"type": "table",
+			"caption": "Thunder Injury",
+			"colLabels": [
+				"d10",
+				"Injury"
+			],
+			"colStyles": [
+				"col-2 text-center no-wrap",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"{@b Ruptured Eardrums.} The sonic assault has blown out your eardrums. You are {@b deafened} and your ears are {@b nonfunctional}. If not treated within 7 days, your hearing will be permanently {@b missing}."
+				],
+				[
+					"2",
+					"{@b Unlucky Shrapnel.} An unlucky piece of shrapnel has ricocheted straight into your eye, leaving it {@b nonfunctional}. If not treated within 3 days, your vision is permanently {@b missing} in that eye. Treat with a DC 20 Surgery."
+				],
+				[
+					"3",
+					"{@bold Barotrauma.} The concussive force reverberates through your lungs, doing major damage. You can no longer hold your breath for longer than 1 round at a time, and raising your voice causes you to take {@damage 1d4} piercing damage."
+				],
+				[
+					"4",
+					"{@bold Acoustic Dead Zone.} In a freak instance of chance, the sonic assault interacts with a thread of natural magic within you. Everything around you seems strangely silent. You are enveloped in an aura of silence that fills your space, as per the {@spell silence} spell. Treat with a DC 24 Arcana check over a long rest."
+				],
+				[
+					"5-6",
+					"{@bold Shrapnel Destruction.} Shrapnel tears through your armor, rendering it damaged. Your armor or shield takes a -2 penalty to the AC granted; if your armor's base AC is reduced to 10 or lower, it is rendered unusable until repaired."
+				],
+				[
+					"7-8",
+					"{@bold Unsteady.} Subtle vibrations rock you deep to your core. You have disadvantage on Dexterity saving throws and Acrobatics checks. Treat with a DC 17 Medicine check over a long rest."
+				],
+				[
+					"9-10",
+					"{@bold Tinnitus.} You are left with an annoying ringing in your ears. You have disadvantage to Perception checks. Treat with a DC 12 Medicine check over a long rest."
+				],
+				[
+					"11-12",
+					"{@bold Speckled Scar.} You've been struck with some ballistic debris, resulting in a painful-looking but harmless scar."
+				]
+			]
+		}
+
+
+
+
+
+
+
+
+		
+
+
+	]
+}		

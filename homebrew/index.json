@@ -7,7 +7,7 @@
 	],
 	"toImport": ["MyRules.json",
 	"BLOCKLIST.json",
-	"items/MOD.json",
+	"MOD.json",
 	"https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/creature/Kobold Press; Tome of Beasts 3.json",
 	"https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/creature/MCDM%20Productions;%20Flee,%20Mortals!.json",
 	"https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/creature/Kobold%20Press;%20Creature%20Codex.json",

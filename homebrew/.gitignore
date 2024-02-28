@@ -1,3 +1,7 @@
 *
 !index.json
 !.gitignore
+!MyRules.json
+!items
+!BLOCKLIST.json
+!MOD.json

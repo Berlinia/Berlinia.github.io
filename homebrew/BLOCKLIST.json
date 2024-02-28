@@ -1,0 +1,244 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "BLOCKLIST",
+                "abbreviation": "BLOCKLIST",
+                "full": "BLOCKLIST",
+                "version": "BLOCKLIST"
+            }
+        ],
+        "dateAdded": 0,
+        "dateLastModified": 0
+    },
+    "blocklist": [
+		{
+			"category": "spell",
+			"displayName": "Distort Value",
+			"hash": "distort%20value_ai",
+			"source": "AI"
+		},
+		{
+			"category": "spell",
+			"displayName": "Jim's Magic Missile",
+			"hash": "jim's%20magic%20missile_ai",
+			"source": "AI"
+		},
+		{
+			"category": "spell",
+			"displayName": "Calling Card",
+			"hash": "calling%20card_ghpg",
+			"source": "GHPG"
+		},
+		{
+			"category": "spell",
+			"displayName": "Frost Fingers",
+			"hash": "frost%20fingers_idrotf",
+			"source": "IDRotF"
+		},
+		{
+			"category": "spell",
+			"displayName": "Divine Favor",
+			"hash": "divine%20favor_myrules",
+			"source": "MyRules"
+		},
+		{
+			"category": "spell",
+			"displayName": "Acid Splash",
+			"hash": "acid%20splash_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Arms of Hadar",
+			"hash": "arms%20of%20hadar_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Bane",
+			"hash": "bane_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Blade Ward",
+			"hash": "blade%20ward_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Burning Hands",
+			"hash": "burning%20hands_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Detect Poison and Disease",
+			"hash": "detect%20poison%20and%20disease_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Expeditious Retreat",
+			"hash": "expeditious%20retreat_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Friends",
+			"hash": "friends_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Grease",
+			"hash": "grease_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Hail of Thorns",
+			"hash": "hail%20of%20thorns_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Heroism",
+			"hash": "heroism_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Hex",
+			"hash": "hex_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Hunter's Mark",
+			"hash": "hunter's%20mark_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Illusory Script",
+			"hash": "illusory%20script_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Jump",
+			"hash": "jump_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Poison Spray",
+			"hash": "poison%20spray_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Resistance",
+			"hash": "resistance_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Shillelagh",
+			"hash": "shillelagh_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Shocking Grasp",
+			"hash": "shocking%20grasp_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Spare the Dying",
+			"hash": "spare%20the%20dying_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Thunderwave",
+			"hash": "thunderwave_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "True Strike",
+			"hash": "true%20strike_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Witch Bolt",
+			"hash": "witch%20bolt_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Silvery Barbs",
+			"hash": "silvery%20barbs_scc",
+			"source": "SCC"
+		},
+		{
+			"category": "spell",
+			"displayName": "Beast Bond",
+			"hash": "beast%20bond_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "spell",
+			"displayName": "Control Flames",
+			"hash": "control%20flames_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "spell",
+			"displayName": "Earth Tremor",
+			"hash": "earth%20tremor_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "spell",
+			"displayName": "Gust",
+			"hash": "gust_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "spell",
+			"displayName": "Ice Knife",
+			"hash": "ice%20knife_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "spell",
+			"displayName": "Infestation",
+			"hash": "infestation_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "spell",
+			"displayName": "Snare",
+			"hash": "snare_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "spell",
+			"displayName": "Thunderclap",
+			"hash": "thunderclap_xge",
+			"source": "XGE"
+		},
+		{
+			"category": "spell",
+			"displayName": "Zephyr Strike",
+			"hash": "zephyr%20strike_xge",
+			"source": "XGE"
+		}
+	]
+}
