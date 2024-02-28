@@ -44,13 +44,13 @@
 			"name": "Weapon Masteries",
 			"source": "MOD",
 			"entries": [
-				"Weapons have been largerly redesigned inspired by the Unearthed Arcana. A character can now unlock Weapon Masteries and use them if they wield a weapon that meets the prerequisites. Its not about what weapon you have, but how you use it.",
+				"Weapons have been largerly redesigned inspired by the Unearthed Arcana. A character can now unlock Weapon Masteries and use them if they wield a weapon that meets the prerequisites. Its not about what weapon you have, but how you use it. The abilities described in this section can only be used once per round. They recharge at the start of your turn.",
 				{
 					"type": "optfeature",
 					"name": "Cleave",
 					"prerequisite": "Melee Weapon, {@variantrule Weapon Properties|MOD|Heavy Property}",
 					"entries": [
-						"If you hit a creature with a melee attack using this weapon, you can make an attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon’s damage, but don’t add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
+						"If you hit a creature with a melee attack using this weapon, you can make an attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon’s damage, but don’t add your ability modifier to that damage unless that modifier is negative."
 					]
 				},
 				{
@@ -66,7 +66,7 @@
 					"name": "Nick",
 					"prerequisite": "{@variantrule Weapon Properties|MOD|Light Property}",
 					"entries": [
-						"When you make the extra attack of the Light property, you can make it as part of the {@action Attack|PHB} action, instead of as a Bonus Action. You can make this extra attack only once per turn."
+						"When you make the extra attack of the Light property, you can make it as part of the {@action Attack|PHB} action, instead of as a Bonus Action."
 					]
 				},
 				{
@@ -82,7 +82,7 @@
 					"name": "Sap",
 					"prerequisite": "{@variantrule Weapon Properties|MOD|Versatile or No Weapon Property}",
 					"entries": [
-						"If you hit a creature with this weapon, that creature has disadvantage on its first attack. This effect can only be applied once per turn."
+						"If you hit a creature with this weapon, that creature has disadvantage on its first attack."
 					]
 				},
 				{
@@ -90,9 +90,42 @@
 					"name": "Slow",
 					"prerequisite": "None",
 					"entries": [
-						"If you hit a creature with this weapon, that creature has disadvantage on its first attack. This effect can only be applied once per turn."
+						"If you hit a creature with this weapon and deal damage to it, you can reduce its speed by up to 10ft., reduced by 5ft. for each size difference the creature is larger than you."
+					]
+				},
+				{
+					"type": "optfeature",
+					"name": "Slow",
+					"prerequisite": "None",
+					"entries": [
+						"If you hit a creature with this weapon and deal damage to it, you can reduce its speed by up to 10ft., reduced by 5ft. for each size difference the creature is larger than you."
+					]
+				},
+				{
+					"type": "optfeature",
+					"name": "Topple",
+					"prerequisite": "{@variantrule Weapon Properties|MOD|Heavy, Reach or Versatile Properties}",
+					"entries": [
+						"If you hit a creature with this weapon, you can force the creature to make a DC (8 + PB + attack ability modifier) CON save. On a failed save, the creature becomes {@condition Prone|PHB|prone}."
+					]
+				},
+				{
+					"type": "optfeature",
+					"name": "Pierce",
+					"prerequisite": "Martial Ranged Weapon or {@variantrule Weapon Properties|MOD|Reach Property}",
+					"entries": [
+						"If you hit a creature with this weapon and deal damage to the creature, you can make an additional free attack against a creature standing up to 5ft. behind the first creature."
+					]
+				},
+				{
+					"type": "optfeature",
+					"name": "Vex",
+					"prerequisite": "{@variantrule Weapon Properties|MOD|Ammunition, Finesse, or Light Property}",
+					"entries": [
+						"If you hit a creature with this weapon and deal damage to the creature, you have advantage on your next attack roll against htat creature before the end of your next turn."
 					]
 				}
+				
 			]
 		},
 		{
