@@ -5,5 +5,13 @@
 		"This file contains as an index for other homebrew files, which should be placed in the same directory.",
 		"For example, add \"My Homebrew.json\" to the \"toImport\" array below, and have a valid JSON homebrew file in this (\"homebrew/\") directory."
 	],
-	"toImport": []
+	"toImport": ["MyRules.json",
+	"BLOCKLIST.json",
+	"items/MOD.json",
+	"https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/creature/Kobold Press; Tome of Beasts 3.json",
+	"https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/creature/MCDM%20Productions;%20Flee,%20Mortals!.json",
+	"https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/creature/Kobold%20Press;%20Creature%20Codex.json",
+	"https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/creature/Kobold%20Press;%20Tome%20of%20Beasts.json",
+	"https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/creature/Kobold%20Press;%20Tome%20of%20Beasts%202.json",
+	"https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/class/MCDM%20Productions;%20The%20Illrigger%20Class.json"]
 }
