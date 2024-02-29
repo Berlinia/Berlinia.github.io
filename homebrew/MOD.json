@@ -797,26 +797,40 @@
 			],
 			[
 				"Giant Slayer",
-				"Your blade is infused with a giants might, after you fought and defeated a powerful giant. Due to the nature of the Ordening, defeating more powerful giants applies the effects of the highest caste.",
 				{
-					"type": "list",
-					"name": "Giant's Might Weapons",
-					"items": [
-						"{@b Hill Giant.} Your strength and constitution scores increase by +1, max 22.",
-						"{@b Frost Giant.} Your strength and constitution scores increases by +2, max 22. You gain resistance to cold damage.",
-						"{@b Storm Giant.} Your strength and constitution scores increases by +2, max 22. You gain resistance to lightning and thunder damage. Once per long rest, you can cast thunderstep."
-					]
+					"type": "entries",
+					"name": "",
+					"page": 0,
+					"entries": [
+					"Your blade is infused with a giants might, after you fought and defeated a powerful giant. Due to the nature of the Ordening, defeating more powerful giants applies the effects of the highest caste.",
+					{
+						"type": "list",
+						"name": "Giant's Might Weapons",
+						"items": [
+							"{@b Hill Giant.} Your strength and constitution scores increase by +1, max 22.",
+							"{@b Frost Giant.} Your strength and constitution scores increases by +2, max 22. You gain resistance to cold damage.",
+							"{@b Storm Giant.} Your strength and constitution scores increases by +2, max 22. You gain resistance to lightning and thunder damage. Once per long rest, you can cast thunderstep."
+						]
+					}
+					],
 				}
-			],
+			],	
 			[
 				"Mortals",
 				"You have fought and killed many enemies. Either through a heroic feat in a battlefield, or because you are a mass-murderer or anything in between.",
 				{
-					"type": "list",
-					"items": [
-						"{@b Ninja's Katana.} You are used to fighting while outmatched. When more than one enemy is within 5ft. of you while wielding this weapon, you gain +1 to your AC, to hit and damage bonus.",
-						"{@b Heroic Warrior.} You wield your weapon in the face of overwhelming danger. When other creatures see you fight with it, they are emboldened by your actions, gaining resistance to the {@condition frightened|PHB} condition and 1d8+PB temporary hitpoints at the start of combat.",
-						"{@b Mass Murderer.} You have assassinated more people than you can count, and your blade thirsts for blood. The number needed to score a critical hit is reduced by 1 (this effect can stack). When dealing the killing blow on a creature, your next attack has advantage. You can only use this feature once per long rest."
+					"type": "entries",
+					"name": "",
+					"page": 0,
+					"entries": [
+						{	
+							"type": "list",
+							"items": [
+								"{@b Ninja's Katana.} You are used to fighting while outmatched. When more than one enemy is within 5ft. of you while wielding this weapon, you gain +1 to your AC, to hit and damage bonus.",
+								"{@b Heroic Warrior.} You wield your weapon in the face of overwhelming danger. When other creatures see you fight with it, they are emboldened by your actions, gaining resistance to the {@condition frightened|PHB} condition and 1d8+PB temporary hitpoints at the start of combat.",
+								"{@b Mass Murderer.} You have assassinated more people than you can count, and your blade thirsts for blood. The number needed to score a critical hit is reduced by 1 (this effect can stack). When dealing the killing blow on a creature, your next attack has advantage. You can only use this feature once per long rest."
+							]
+						}
 					]
 				}
 			]
