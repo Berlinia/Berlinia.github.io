@@ -1634,9 +1634,6 @@
 		{
 			"name": "Acolyte",
 			"source": "MOD",
-			"page": 127,
-			"srd": true,
-			"basicRules": true,
 			"skillProficiencies": [
 				{
 					"insight": true,
@@ -1716,6 +1713,150 @@
 					"entries": [
 						"As an acolyte of your faith, you and your party can always find shelter in a temple of a god friendly to your own. Priests will give you their cheapest services for half cost, although you have to provide material components yourself. The first time you visit a new temple, you receive a {@item Potion of Healing|DMG} and 2 flasks of {@item Holy Water (Flask)|PHB|holy water}.",
 						"You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple. While in that temple"
+					],
+					"data": {
+						"isFeature": true
+					}
+				}
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Archaeologist",
+			"source": "MOD",
+			"skillProficiencies": [
+				{
+					"history": true,
+					"survival": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"jeweler's tools"
+						]
+					}
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"item": "map or scroll case|phb",
+							"displayName": "wooden case containing a map to a ruin or dungeon"
+						},
+						"bullseye lantern|phb",
+						"miner's pick|phb",
+						"traveler's clothes|phb",
+						"shovel|phb",
+						"two-person tent|phb",
+						{
+							"item": "trinket|phb",
+							"displayName": "trinket recovered from a dig site"
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 2500
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill History}, {@skill Survival}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@item Jeweler's Tools|MOD}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A {@item Map or Scroll Case|phb|wooden case} containing a map to a ruin or dungeon, a {@item bullseye lantern|phb}, a {@item miner's pick|phb}, a set of {@item traveler's clothes|phb}, a {@item shovel|phb}, a {@item two-person tent|phb}, a {@item trinket|phb} recovered from a dig site, and a {@item pouch|phb} containing 25 gp"
+						},
+						{
+							"type": "item",
+							"name": "Feat:",
+							"entry": "You gain the {@feat dungeon delver|PHB} feat"
+						}
+					]
+				},
+				{
+					"name": "Dust Digger",
+					"type": "entries",
+					"entries": [
+						"Prior to becoming an adventurer, you spent most of your young life crawling around in the dust, pilfering relics of questionable value from crypts and ruins. Though you managed to sell a few of your discoveries and earn enough coin to buy proper adventuring gear, you have held onto an item that has great emotional value to you. Roll on the Signature Item table to see what you have, or choose an item from the table.",
+						{
+							"type": "table",
+							"caption": "Signature Item",
+							"colLabels": [
+								"d8",
+								"Item"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"{@item pole (10-foot)|phb|10-foot pole}"
+								],
+								[
+									"2",
+									"{@item Crowbar|phb}"
+								],
+								[
+									"3",
+									"Hat"
+								],
+								[
+									"4",
+									"{@item Hooded lantern|phb}"
+								],
+								[
+									"5",
+									"Medallion"
+								],
+								[
+									"6",
+									"{@item Shovel|phb}"
+								],
+								[
+									"7",
+									"{@item Sledgehammer|phb}"
+								],
+								[
+									"8",
+									"{@item Whip|phb}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"name": "Feature: ",
+					"type": "entries",
+					"entries": [
+						"You are familiar with ruins and dungeons from old civilizations. When entering such an archeological ruin, you can determine its original purpose, as well as recall information about its potential layout. Your party additionally can not be surprised while inside the dungeon, as you recognize potential ambush spots immediatelly. Finally, when taking a short or long rest, the roll to determine if you are found and your rest is interrupted is rolled with advantage."
 					],
 					"data": {
 						"isFeature": true
