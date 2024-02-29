@@ -58,12 +58,12 @@
 					"name": "Spending inspiration",
 					"type": "section",
 					"entries": [
-						"You can only ever have 1 point of inspiration, so use it wisely, don't hoard it!",
+						"What's the point of gaining inspiration, if you can't spend it! Below are some options that cost 1 inspiration.",
 						{
 							"type": "list",
 							"items": [
-								"{@b Critical Success.} Whenever a character makes a d20 roll and rolls a 20 on a significant check, they can choose to have another creature that can see or hear them be inspired by them.",
-								"{@b Critical Failure.} Whenever a character makes a d20 roll and rolls a 1, they gain inspiration, from a desperate desire to prove their worht and push forwards. A critical failure that grants inspiration can't be rerolled with any use of inspiration.",
+								"{@b Do Over.} Reroll a single d20 that was rolled, before hearing the outcome.",
+								"{@b Legendary Action.} At the end of another creatures turn, take the {@action Attack|PHB|Attack} action (one weapon attack), the {@action Cast a Spell|PHB} action (a cantrip with casting time of 1 action), or either of {@action Disengage|PHB}, {@action Hide|PHB}, {@action Dash|PHB}, {@action Use an Object|PHB} action.",
 								"{@b Above and Beyond.} Sometimes, characters do things that are not in their immediate self interest. Detour from the dungeon to help a lady find her pan. When completing such side-missions, the DM can choose to grant inspiration to the party. They are permitted to ask.",
 								"{@b Pushing the Limit.} Whenever a character spends their last use of a limited-use class feature, they gain inspiration. This can include such scenarios as using the last spell slot granted by the Spellcasting or Pact Magic feature, the last ki point granted by the monk’s Ki feature, a cleric’s final use of Channel Divinity, and so on. Once a character gains inspiration in this way, they can't do so again until they finish a long rest."
 							]
