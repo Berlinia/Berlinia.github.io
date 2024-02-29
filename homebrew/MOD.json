@@ -44,11 +44,29 @@
 				"entries": [
 					"Dipping your sword in silver before you go slay some werewolves is well known behavior in adventurer land. However, there is much more than just silver. Not all materials are easy to come by, or work with, but a true warriors blade is often not made of copper. Adding a coating to a weapon does not make it magical, but often does improve on its capabilites.",
 					"{@b Requirements.} The necessary {@table Crafting Materials|MOD|crafting materials}, a base weapon, a forge and a dedicated smithy that is up to the task. Applying new materials to a magical item is possible, but exceptionally expensive and prohibitively hard. Only smiths of legend can combine the two.",
-					"{@b Limitations.} Piercing weapons can have 3 material upgrades, Slashing 2, and bludgeoning 1."
+					"{@b Limitations.} Weapons can only ever have a single material upgrade. If you wish to provide another material upgrade, the previous one needs to be removed, which costs 1000gp."
+				]
+			},
+			{
+				"name": "Blessing",
+				"type": "section",
+				"entries": [
+					"Some great warriors would make great journeys to have their weapon blessed by the emisaries of the gods. They often shaped the course of their lives, and informed their feats.",
+					"{@b Requirements.} A base weapon, as well as a creature capable of blessing the weapon (either themselves, or through their patron/god). Either a powerful celestial, a cunning devil, etc. See the {@table Weapon Blessings|MOD|weapon blessings} table for examples of what creatures could give what blessings. It should be obvious, that Zariel would be able to 'bless' an item with significantly more power than your local Raksasha. It should also be obvious that Zariel would be apprehensive of blessing a blade made from stygian onyx.",
+					"{@b Limitations.} A weapon can only ever have a single blessing, and it can not have the Slayer feature. Blessings can be removed if it fits the narrative, but there is no clear mechanical way to do so. If you wish to transfer a blessing you need a legendary priest, cultist or such, and 10000gp."
+				]
+			},
+			{
+				"name": "Slayer",
+				"type": "section",
+				"entries": [
+					"Slaying an aboleth, and dipping your sword in its corpse, letting it absorb its essence. Defending a narrow pass from a legion invasion, while wielding just your morningstar. These feats of strength change your weapons, add their legend, and often, their power. Once again, refer to the {@table Slayer|MOD|Slayer} table for examples of events and the mechanical benefit they might provide, however work with your DM to design a feature you want for your character. ",
+					"{@b Requirements.} A base weapon and a feat of strength which shapes the Slayers feature.",
+					"{@b Limitations.} A weapon can only ever have a single Slayer feature, and it can not simultaneously be blessed. A weapon can not lose the Slayer feature once obtained, only improve on it."
 				]
 			}
-			]
 
+			]
 		},
 		{
 			"name": "Legendary Inspiration",
@@ -405,7 +423,6 @@
 		{
 			"name": "GRIM",
 			"source": "MOD",
-			"ruletype": "V",
 			"entries": [
 				"It's no secret that death saves in 5e are a little bit weird: a PC left on the ground is either ignored, in which case they bounce back up almost immediately after a {@spell healing word}, or they get double-tapped and murdered before anybody has a chance to intervene. It's a system that's often entirely dependent on the DM's mercy, and is basically held up by the DM creating reasons that the enemy doesn't just finish off a downed PC.",
 				"The following system revision, haphazardly called GRIM, is intended to give dying PCs a little more agency in their deaths while removing the factor of DM mercy from the equation.",
@@ -730,10 +747,106 @@
 	],
 	"table": [
 		{
+			"name": "Slayer",
+			"source": "MOD",
+			"type": "table",
+			"caption": "Table of Slayer Boons {@variantrule Weapon Enhancements|MOD}",
+			"colLabels": [
+				"Slain",
+				"Power"
+			],
+			"colStyles": [
+				"col-2 text-center no-wrap",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"{@b Ocular Corrosion.} Acid has splashed over both of your eyes. You are blinded and both your eyes are {@b nonfunctional}. If you do not receive surgery within 7 days, your vision will be permanently missing. Requires a DC 20 Surgery to treat."
+				],
+				[
+					"2",
+					"{@b Dissolved Limb.} Acid coats one of your limbs, and you hear the sizzle as it starts to dissolve. This limb is {@b nonfunctional}; if you do not recieve surgery within 7 days, the limb dissolves away and is {@b missing}. Requires a DC 20 Surgery to treat."
+				],
+				[
+					"3",
+					"{@bold Vocal Cord Damage} The acid's caustic fumes have wreaked havoc on your vocal cords. Your voice is nonfunctional and you are {@condition silenced}. Requires a DC 17 Surgery to treat."
+				],
+				[
+					"4",
+					"{@bold Dissolved Magic.} The acid has eaten into the essence of one of your magic items, expelling its arcane energy and rendering it mundane. One random magic item on your person (prioritizing attuned, worn, and wielded items) loses its magic. A master craftsman can potentially restore the item. A legendary or artifact item is instead suppressed for 3 long rests."
+				],
+				[
+					"5-6",
+					"{@bold Corroded Armor.} Your armor takes a -3 penalty to the AC it provides until repaired. If its base AC is reduced to 10 or lower, it is destroyed. (If your armor is magical, it cannot be destroyed by this injury, but is rendered useless if brought to 10 base AC or lower until repaired). If you are wearing no armor, treat this result as a 9."
+				],
+				[
+					"7-8",
+					"{@bold Corroded Weapon.} The acid eats away at your weapon or spellcasting focus. Whatever weapon or focus you are wielding takes a -3 penalty to all attack rolls, damage rolls, and saving throw DCs (for spellcasting foci)."
+				],
+				[
+					"9-10",
+					"{@bold Caustic Burn.} The acid has left you with a painful burn. You take 1 point of acid damage for every 5 feet you move while in initative, or while exerting yourself (i.e running away). A DC 16 Medicine check made over a long rest ends this effect."
+				],
+				[
+					"11-12",
+					"{@bold Scaly Scar.} The acid injury has resulted in a gnarled and scaly scar."
+				]
+			]
+		},
+		{
+			"name": "Weapon Blessings",
+			"source": "MOD",
+			"type": "table",
+			"caption": "Table of Weapon Blessings for {@variantrule Weapon Enhancements|MOD}",
+			"colLabels": [
+				"Entity",
+				"Blessing"
+			],
+			"colStyles": [
+				"col-2 text-center no-wrap",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"{@b Ocular Corrosion.} Acid has splashed over both of your eyes. You are blinded and both your eyes are {@b nonfunctional}. If you do not receive surgery within 7 days, your vision will be permanently missing. Requires a DC 20 Surgery to treat."
+				],
+				[
+					"2",
+					"{@b Dissolved Limb.} Acid coats one of your limbs, and you hear the sizzle as it starts to dissolve. This limb is {@b nonfunctional}; if you do not recieve surgery within 7 days, the limb dissolves away and is {@b missing}. Requires a DC 20 Surgery to treat."
+				],
+				[
+					"3",
+					"{@bold Vocal Cord Damage} The acid's caustic fumes have wreaked havoc on your vocal cords. Your voice is nonfunctional and you are {@condition silenced}. Requires a DC 17 Surgery to treat."
+				],
+				[
+					"4",
+					"{@bold Dissolved Magic.} The acid has eaten into the essence of one of your magic items, expelling its arcane energy and rendering it mundane. One random magic item on your person (prioritizing attuned, worn, and wielded items) loses its magic. A master craftsman can potentially restore the item. A legendary or artifact item is instead suppressed for 3 long rests."
+				],
+				[
+					"5-6",
+					"{@bold Corroded Armor.} Your armor takes a -3 penalty to the AC it provides until repaired. If its base AC is reduced to 10 or lower, it is destroyed. (If your armor is magical, it cannot be destroyed by this injury, but is rendered useless if brought to 10 base AC or lower until repaired). If you are wearing no armor, treat this result as a 9."
+				],
+				[
+					"7-8",
+					"{@bold Corroded Weapon.} The acid eats away at your weapon or spellcasting focus. Whatever weapon or focus you are wielding takes a -3 penalty to all attack rolls, damage rolls, and saving throw DCs (for spellcasting foci)."
+				],
+				[
+					"9-10",
+					"{@bold Caustic Burn.} The acid has left you with a painful burn. You take 1 point of acid damage for every 5 feet you move while in initative, or while exerting yourself (i.e running away). A DC 16 Medicine check made over a long rest ends this effect."
+				],
+				[
+					"11-12",
+					"{@bold Scaly Scar.} The acid injury has resulted in a gnarled and scaly scar."
+				]
+			]
+		},
+		{
 			"name": "Crafting Materials",
 			"source": "MOD",
 			"type": "table",
-			"caption": "Table of Materials for {{@variantrule Weapon Enhancements|MOD}",
+			"caption": "Table of Materials for {@variantrule Weapon Enhancements|MOD}",
 			"colLabels": [
 				"Material",
 				"Property"
