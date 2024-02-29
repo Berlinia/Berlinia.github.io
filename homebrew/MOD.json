@@ -764,7 +764,7 @@
 			"name": "Slayer",
 			"source": "MOD",
 			"type": "table",
-			"caption": "Table of Slayer Boons {@variantrule Weapon Enhancements|MOD}",
+			"caption": "Table of Slayer Boons",
 			"colLabels": [
 				"Slain",
 				"Power"
@@ -812,7 +812,7 @@
 			"name": "Weapon Blessings",
 			"source": "MOD",
 			"type": "table",
-			"caption": "Table of Weapon Blessings for {@variantrule Weapon Enhancements|MOD}",
+			"caption": "Table of Weapon Blessings",
 			"colLabels": [
 				"Entity",
 				"Blessing"
@@ -860,7 +860,7 @@
 			"name": "Crafting Materials",
 			"source": "MOD",
 			"type": "table",
-			"caption": "Table of Materials for {@variantrule Weapon Enhancements|MOD}",
+			"caption": "Table of Weapon Materials",
 			"colLabels": [
 				"Material",
 				"Property"
