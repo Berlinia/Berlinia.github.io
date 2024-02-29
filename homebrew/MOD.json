@@ -60,7 +60,7 @@
 						{
 							"type": "list",
 							"items": [
-								"{@b Requirements.} A base weapon, as well as a creature capable of blessing the weapon (either themselves, or through their patron/god). Either a powerful celestial, a cunning devil, etc. See the {@table Weapon Blessings|MOD|weapon blessings} table for examples of what creatures could give what blessings. It should be obvious, that Zariel would be able to 'bless' an item with significantly more power than your local Raksasha. It should also be obvious that Zariel would be apprehensive of blessing a blade made from stygian onyx.",
+								"{@b Requirements.} A base weapon, as well as a creature capable of blessing the weapon (either themselves, or through their patron/god). Either a powerful celestial, a cunning devil, etc. See the {@table Weapon Enhancements: Blessings|MOD|weapon blessings} table for examples of what creatures could give what blessings. It should be obvious, that Zariel would be able to 'bless' an item with significantly more power than your local Raksasha. It should also be obvious that Zariel would be apprehensive of blessing a blade made from stygian onyx.",
 								"{@b Limitations.} A weapon can only ever have a single blessing, and it can not have the Slayer feature. Blessings can be removed if it fits the narrative, but there is no clear mechanical way to do so. If you wish to transfer a blessing you need a legendary priest, cultist or such, and 10000gp."
 							]
 						}
@@ -873,6 +873,18 @@
 				[
 					"Demon Prince (Baphomet, Grazz't)",
 					"You have gained the attention of the demon prince Graz'zt. Damage dealt by this weapon can not be resisted. Once per short rest, you can teleport up to 120ft to an unoccupied space you can see. Once per long rest, you can cast {@spell Crown of Madness|PHB} as a bonus action."
+				],
+				[
+					"Creature of the Far Planes (Abolethic Sovereignty, C'thulu)",
+					"Your weapon has been blessed by the Abolethic Sovereignty. You gain access to the genetic knowledge of the far realm, and you can add 1d10 to Intelligence checks. Once per long rest, you can use the enslave action covering your blade in abolethic muccus for a few instances. Make a normal attack against a creature. If you hit, the target must succeed on a DC14 WIS save, or be magically {@condition charmed|PHB} by you. The charmed creature is under your control, and you can telepathically communicate with it. If you and the creature are seperated by more than 1 mile, the condition ends."
+				],
+				[
+					"Shadowfell Entity (Dark Powers, Raven Queen)",
+					"Your weapon was blessed by the Raven Queen, from her Fortress of Memories. You can cast the find {@spell familiar spell|PHB} (raven) without any material components and this weapon no deals psychic damage. Once per short rest, you can use an action to summon a swarm of ravens to fight for you for 1 minute. Once per long rest, you can use an action to summon 1d4+PB swarms of ravens to fight for you for 1 minute."
+				],
+				[
+					"Archfey (Titania, Oberon)",
+					"Your weapon was blessed by the Lord of Beasts, King Oberron. You can cast {@spell speak with animals|PHB} at will. Once per short rest you can cast {@spell animal friendship|PHB}. Once per long rest, you can cast {@spell dominate beast|PHB}. The DC for this spell is 12+PB."
 				]
 			]
 		},
