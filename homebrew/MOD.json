@@ -40,7 +40,6 @@
 				"Every NPC you meet in the world has a life, career, skills etc. In order to interact with the some homebrew systems, like the {@variantrule Weapon Enhancements|MOD} system, you are asked to find and identify the {@i skill} of a particular NPC. In this section, I provide a little explanation for what determines someones skill and how they can be identified/distinguished. These are given with level indications, trying to sort of tie power to their feats, as described in the DMG under TIERS OF PLAY.",
 				{
 					"type": "list",
-					"style": "list-hang",
 					"columns": 0,
 					"page": 0,
 					"name": "",
@@ -56,7 +55,6 @@
 								"{@b Legendary (level 11-15).} Legendary NPCs are true masters of what they do. Their skill and renown extends far beyond national borders, and their services are in great demand. However, this benefits them as they can often work with whom they want. They are not tied to a particular organization, and as such employing them can be dependent on their whims. They are also often hard to reach, as their considerable resources afford them to work exactly how they want. We provide two examples here, the Legendary Swordcrafter and the Legendary Priest.",
 								{
 									"type": "list",
-									"style": "list-hang",
 									"columns": 0,
 									"page": 0,
 									"name": "",
