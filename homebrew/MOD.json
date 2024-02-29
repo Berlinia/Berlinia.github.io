@@ -33,6 +33,23 @@
 		}
 	],
 	"variantrule": [
+		{ 
+			"name": "Weapon Enhancements",
+			"source": "MOD",
+			"entries": [
+			"When Aragorn was presented Anduril by Elrond, viewers didn't think 'oh, that's just a +1 longsword'. The weapons of great heroes become almost mythological, often becoming the topics of stories. Sure, you can loot a guard and take his pike, but that won't serve you well... usually. This weapon modification system is an extensive system for creating better weapons. There are three types of weapon changes, each requiring a different procedure to be achieved titled 'Material upgrade, Blessing and Slayer'. Some of these are concrete upgrades, others depend on the DM and the story.",
+			{
+				"name": "Material upgrade",
+				"type": "section",
+				"entries": [
+					"Dipping your sword in silver before you go slay some werewolves is well known behavior in adventurer land. However, there is much more than just silver. Not all materials are easy to come by, or work with, but a true warriors blade is often not made of copper. Adding a coating to a weapon does not make it magical, but often does improve on its capabilites.",
+					"{@b Requirements.} The necessary {@table Crafting Material|MOD|crafting materials}, a base weapon, a forge and a dedicated smithy that is up to the task. Applying new materials to a magical item is possible, but exceptionally expensive and prohibitively hard. Only smiths of legend can combine the two.",
+					"{@b Limitations.} Piercing weapons can have 3 material upgrades, Slashing 2, and bludgeoning 1."
+				]
+			}
+			]
+
+		},
 		{
 			"name": "Legendary Inspiration",
 			"source": "MOD",
@@ -64,8 +81,9 @@
 							"items": [
 								"{@b Do Over.} Reroll a single d20 that was rolled, before hearing the outcome.",
 								"{@b Legendary Action.} At the end of another creatures turn, take the {@action Attack|PHB|Attack} action (one weapon attack), the {@action Cast a Spell|PHB} action (a cantrip with casting time of 1 action), or either of {@action Disengage|PHB}, {@action Hide|PHB}, {@action Dash|PHB}, {@action Use an Object|PHB} action.",
-								"{@b Above and Beyond.} Sometimes, characters do things that are not in their immediate self interest. Detour from the dungeon to help a lady find her pan. When completing such side-missions, the DM can choose to grant inspiration to the party. They are permitted to ask.",
-								"{@b Pushing the Limit.} Whenever a character spends their last use of a limited-use class feature, they gain inspiration. This can include such scenarios as using the last spell slot granted by the Spellcasting or Pact Magic feature, the last ki point granted by the monk’s Ki feature, a cleric’s final use of Channel Divinity, and so on. Once a character gains inspiration in this way, they can't do so again until they finish a long rest."
+								"{@b Legendary Healing.} Heal for the roll of 2 hit dice plus you constitution bonus.",
+								"{@b Resourceful.} Regain 1 usage of a limited class feature. Bardic inspiration, Channel Divinity, 2 Ki points, Primeval awareness, Rage, Reroll sneak attack dice, sorcery points, 1st-2nd spellslots for a wizard and warlock.",
+								"{@b Quick Rest.} The party can collectively exchange all of their inspiration points, to short rest over a period of 1 minute, provided each member has a point left."
 							]
 						}
 					]
@@ -429,7 +447,7 @@
 					"type": "entries",
 					"name": "Death Saves",
 					"entries": [
-						"If you take damage while you are at {@condition Death's Door}, you must make a death saving throw with a DC equal to 10 or half the damage taken (whichever is higher). Death saves are still made with a +0 modifier by default, and cannot benefit from any modifiers or bonuses.",
+						"If you take damage while you are at {@condition Death's Door}, you must make a death saving throw with a DC equal to 5 or your number of negative hitpoints (whichever is higher). Death saves are still made with a +0 modifier by default, and cannot benefit from any modifiers or bonuses.",
 						"Rolling a natural 1 on a death save causes 2 failures. Rolling a natural 20 restores 2HD + Con hit points to you (although you remain at Death's Door if your hit points are still below 0).",
 						"You can no longer 'stabilize'; succeeding on death saves does nothing. You only stop making death saves if you fail 3 death saves (see \"Mortality\", below) or if you escape from Death's Door (i.e are healed above 0 hit points).",
 						"Temporary hit points don't allow you to leave Death's Door; however, any damage absorbed by temporary hit points is not counted in the death save DC calculation. (If you have 6 temp hp and you take 30 damage, you would only need to succeed on a DC 12 death saving throw rather than a DC 15). You still must make a death saving throw even if all the damage is absorbed by your temporary hit points.",
@@ -711,6 +729,54 @@
 		}
 	],
 	"table": [
+		{
+			"name": "Materials",
+			"source": "MOD",
+			"type": "table",
+			"caption": "Table of Materials for {{@variantrule Weapon Enhancements|MOD}",
+			"colLabels": [
+				"Material",
+				"Property"
+			],
+			"colStyles": [
+				"col-2 text-center no-wrap",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"{@b Ocular Corrosion.} Acid has splashed over both of your eyes. You are blinded and both your eyes are {@b nonfunctional}. If you do not receive surgery within 7 days, your vision will be permanently missing. Requires a DC 20 Surgery to treat."
+				],
+				[
+					"2",
+					"{@b Dissolved Limb.} Acid coats one of your limbs, and you hear the sizzle as it starts to dissolve. This limb is {@b nonfunctional}; if you do not recieve surgery within 7 days, the limb dissolves away and is {@b missing}. Requires a DC 20 Surgery to treat."
+				],
+				[
+					"3",
+					"{@bold Vocal Cord Damage} The acid's caustic fumes have wreaked havoc on your vocal cords. Your voice is nonfunctional and you are {@condition silenced}. Requires a DC 17 Surgery to treat."
+				],
+				[
+					"4",
+					"{@bold Dissolved Magic.} The acid has eaten into the essence of one of your magic items, expelling its arcane energy and rendering it mundane. One random magic item on your person (prioritizing attuned, worn, and wielded items) loses its magic. A master craftsman can potentially restore the item. A legendary or artifact item is instead suppressed for 3 long rests."
+				],
+				[
+					"5-6",
+					"{@bold Corroded Armor.} Your armor takes a -3 penalty to the AC it provides until repaired. If its base AC is reduced to 10 or lower, it is destroyed. (If your armor is magical, it cannot be destroyed by this injury, but is rendered useless if brought to 10 base AC or lower until repaired). If you are wearing no armor, treat this result as a 9."
+				],
+				[
+					"7-8",
+					"{@bold Corroded Weapon.} The acid eats away at your weapon or spellcasting focus. Whatever weapon or focus you are wielding takes a -3 penalty to all attack rolls, damage rolls, and saving throw DCs (for spellcasting foci)."
+				],
+				[
+					"9-10",
+					"{@bold Caustic Burn.} The acid has left you with a painful burn. You take 1 point of acid damage for every 5 feet you move while in initative, or while exerting yourself (i.e running away). A DC 16 Medicine check made over a long rest ends this effect."
+				],
+				[
+					"11-12",
+					"{@bold Scaly Scar.} The acid injury has resulted in a gnarled and scaly scar."
+				]
+			]
+		},
 		{
 			"name": "Lingering Injuries: Acid",
 			"source": "MOD",
