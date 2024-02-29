@@ -37,7 +37,7 @@
 			"name": "Weapon Properties",
 			"source": "MOD",
 			"entries": [
-				"Weapons have various inherent properties that define them. For now we only have the ones outlined in {@book |PHB|Weapons|Weapons} chapter in the PHB." 
+				"Weapons have various inherent properties that define them. For now we only have the ones outlined in {@book Weapons Chapter|PHB|6|Weapons} in the PHB." 
 				]
 		},
 		{
