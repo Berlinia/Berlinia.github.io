@@ -39,15 +39,15 @@
 			"entries": [
 				"When Aragorn was presented Anduril by Elrond, viewers didn't think 'oh, that's just a +1 longsword'. The weapons of great heroes become almost mythological, often becoming the topics of stories. Sure, you can loot a guard and take his pike, but that won't serve you well... usually. This weapon modification system is an extensive system for creating better weapons. There are three types of weapon changes, each requiring a different procedure to be achieved titled 'Material upgrade, Blessing and Slayer'. Some of these are concrete upgrades, others depend on the DM and the story.",
 				{
-					"name": "Material upgrade",
+					"name": "Material",
 					"type": "section",
 					"entries": [
-						"Dipping your sword in silver before you go slay some werewolves is well known behavior in adventurer land. However, there is much more than just silver. Not all materials are easy to come by, or work with, but a true warriors blade is often not made of copper. Adding a coating to a weapon does not make it magical, but often does improve on its capabilites.",
+						"Dipping your sword in silver before you go slay some werewolves is well known behavior in adventurer land. However, there is much more than just silver. Not all materials are easy to come by, or work with, but a true warriors blade is often not made of copper. Either by crafting the weapon or adding a coating to it with a new material, the process does not make it magical, but often does improve on its capabilites.",
 						{
 							"type": "list",
 							"items": [
 								"{@b Requirements.} The necessary {@table Crafting Materials|MOD|crafting materials}, a base weapon, a forge and a dedicated smithy that is up to the task. Applying new materials to a magical item is possible, but exceptionally expensive and prohibitively hard. Only smiths of legend can combine the two.",
-								"{@b Limitations.} Weapons can only ever have a single material upgrade. If you wish to provide another material upgrade, the previous one needs to be removed, which costs 1000gp."
+								"{@b Limitations.} Weapons can only ever have a single material base and a material coating. If you wish to provide another material upgrade, the previous one needs to be removed, which costs 1000gp."
 							]
 						}					
 					]
@@ -871,36 +871,44 @@
 			],
 			"rows": [
 				[
-					"1",
-					"{@b Ocular Corrosion.} Acid has splashed over both of your eyes. You are blinded and both your eyes are {@b nonfunctional}. If you do not receive surgery within 7 days, your vision will be permanently missing. Requires a DC 20 Surgery to treat."
+					"Steel",
+					"{@i base. (local)} Most weapons are made of iron, but a few expert smiths have started working with this new alloy called Steel. Steel makes up the body of a weapon, allowing further coatings. A steel weapon gives a +1 to damage rolls, and advantage on checks to see if acid or similar procedure destroys the weapon."
 				],
 				[
-					"2",
-					"{@b Dissolved Limb.} Acid coats one of your limbs, and you hear the sizzle as it starts to dissolve. This limb is {@b nonfunctional}; if you do not recieve surgery within 7 days, the limb dissolves away and is {@b missing}. Requires a DC 20 Surgery to treat."
+					"Silver",
+					"{@b coating. (local)} Extraordinarily brittle, silver makes for a terrible base component. Coating weapons in silver however enhances their capabilites against monstrosities and shapechangers, ignoring any resistances they might have to the weapons damage."
 				],
 				[
-					"3",
-					"{@bold Vocal Cord Damage} The acid's caustic fumes have wreaked havoc on your vocal cords. Your voice is nonfunctional and you are {@condition silenced}. Requires a DC 17 Surgery to treat."
+					"Infernal Iron",
+					"{@bold base (expert)} Infernal Iron is a unique substance produced in the Nine Hells. Typically used by devils to create soul coins, infernal war machines and hellfire weapons, occasionally the metal finds itself on the material plane. Weapons crafted with infernal iron deal an additional 1d4 fire damage. When dealing damage to demons, you can ignore their resistance to your weapons damage type. Furthermore, Infernal Iron is unique in that it can be (re)-forged in Hellfire, in order to create a Hellfire weapon."
 				],
 				[
-					"4",
-					"{@bold Dissolved Magic.} The acid has eaten into the essence of one of your magic items, expelling its arcane energy and rendering it mundane. One random magic item on your person (prioritizing attuned, worn, and wielded items) loses its magic. A master craftsman can potentially restore the item. A legendary or artifact item is instead suppressed for 3 long rests."
+					"Stygian Onyx",
+					"{@bold base (legendary).} Where the River Styx exits the abyss, the pebbles in its bottom absorb the essence of the river and that of the demon lord Tharizdun. Extraordinarily hard to harvest, they cary with them the power of death. Stygian onyx weapons deal an additional damage dice of cold damage that can not be reduced, and reduce a targets maximum hitpoints by an amount equal to that roll. Creatures without a soul are immune to that effect."
 				],
 				[
-					"5-6",
-					"{@bold Corroded Armor.} Your armor takes a -3 penalty to the AC it provides until repaired. If its base AC is reduced to 10 or lower, it is destroyed. (If your armor is magical, it cannot be destroyed by this injury, but is rendered useless if brought to 10 base AC or lower until repaired). If you are wearing no armor, treat this result as a 9."
+					"Celestial Bronze",
+					"{@bold coating. (expert)} Obtained from the mines of Mount Celestia, this material radiates with divine power. Its also the material composing most celestial weaponry, however the technique of using it as a base material is not attenable by mortals. Celestial bronze weapons emit dim light in a range of 15ft, and deal an additional 1d4 radiant damage. Against undead, this damage increases to 2d4, and the total damage dealt ignores any resistances the undead might have."
 				],
 				[
-					"7-8",
-					"{@bold Corroded Weapon.} The acid eats away at your weapon or spellcasting focus. Whatever weapon or focus you are wielding takes a -3 penalty to all attack rolls, damage rolls, and saving throw DCs (for spellcasting foci)."
+					"Imperial Gold",
+					"{@bold coating. (local)} A material created by a lost-empire, these weapons were specifically designed to hunt creatures from the outer planes and to be able to be mass produced for the legions. While rare, its relatively easy to work with. Imperial Gold weapons deal a bonus damage dice agaisnt fiends, celestials and abberations."
 				],
 				[
-					"9-10",
-					"{@bold Caustic Burn.} The acid has left you with a painful burn. You take 1 point of acid damage for every 5 feet you move while in initative, or while exerting yourself (i.e running away). A DC 16 Medicine check made over a long rest ends this effect."
+					"Asteroid Metal",
+					"{@bold base (legendary).} A meteor hit the ground, leaving destruction in its wake. But inside the meteor lies a treasure, a material more sturdy than anything anyone has ever seen. Its origins are unknown, but if someone can fashion it into a weapon its some of the legendary smiths. A weapon made out of Asteroid Metal ignores all innate resistances to damage and grants the weapon the finesse property."
 				],
 				[
-					"11-12",
-					"{@bold Scaly Scar.} The acid injury has resulted in a gnarled and scaly scar."
+					"Mithral",
+					"{@bold base (expert).} While humans are now figuring out how to use Steel, the Elves figured it out around 3000 years ago. Their smelting process and techniques results in light, flexible weaponry and armor that is exceptionally easy to use. Mithral weapons get the finesse property and +1 to hit and damage rolls."
+				],
+				[
+					"Adamantine",
+					"{@bold base (legendary).} During the great Dwarf/Elven conflicts, dwarves needed to find weaponry to match the elves. They went deep, and discovered adamantine, a metal that can only be molten in lava. Weapons made in adamantine deal max damage to objects and structures, and are immune to the effects of acid damage."
+				],
+				[
+					"Leviathan Bone",
+					"{@bold base (local).} In the early days of civilization, weaponry was made of bone. This was crude, fragile and ineffective. It turns out, that when the bone belongs to a kraken, or an ancient red dragon, the material is significantly more powerful. Leviathan weapons have a +1 to hit and damge rolls and deal an extra damage dice to giants and dragons. At face value, they are strict improvement over steel, until you remember that you got to kill the dragon first."
 				]
 			]
 		},
