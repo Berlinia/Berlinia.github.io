@@ -817,12 +817,12 @@
 			],	
 			[
 				"Mortals",
-				"You have fought and killed many enemies. Either through a heroic feat in a battlefield, or because you are a mass-murderer or anything in between.",
 				{
 					"type": "entries",
 					"name": "",
 					"page": 0,
 					"entries": [
+						"You have fought and killed many enemies. Either through a heroic feat in a battlefield, or because you are a mass-murderer or anything in between.",
 						{	
 							"type": "list",
 							"items": [
