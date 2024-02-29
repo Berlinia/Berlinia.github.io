@@ -1631,6 +1631,54 @@
 	],
 	"background": [
 		{
+			"name": "Charlatan",
+			"source": "MOD",
+			"skillProficiencies": [
+				{
+					"deception": true,
+					"sleight of hand": true
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "Deception, Sleight of Hand"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@item Infiltration Kit|MOD} or {@item Thieves' Tools|PHB}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "Infernal, the ancient language of deception"
+						},
+						{
+							"type": "item",
+							"name": "Feat:",
+							"entry": "You gain the {@feat Skilled|PHB} feat."
+						}
+					]
+				},
+				{
+					"name": "Feature: A Man of Many Skills",
+					"type": "entries",
+					"entries": [
+						"You have learnt many skills over your life, and its always useful to practice and remember what you need for your next mission. Once per long rest, choose one skill you are proficient in. You gain expertise in that skill. You can only have expertise in one skill in this way."
+					],
+					"data": {
+						"isFeature": true
+					}
+				}
+			]
+		},
+		{
 			"name": "Artisan",
 			"source": "MOD",
 			"skillProficiencies": [
@@ -1666,6 +1714,16 @@
 							"entry": "You gain the {@feat Tool Expert|MOD} feat."
 						}
 					]
+				},
+				{
+					"name": "Feature: Exceptional Assistant",
+					"type": "entries",
+					"entries": [
+						"Choose one of the various crafting rules, like {@variantrule Weapon Enhancements|MOD}. Whenever you attempt to interact with this system, and you need a smithy of a particular renown (Local, Expert, Master etc), you can reduce the level of the crafter needed provided it is not legendary."
+					],
+					"data": {
+						"isFeature": true
+					}
 				}
 			]
 		},
@@ -1834,7 +1892,7 @@
 					"type": "list",
 					"items": [
 						"{@b Tool Proficiency}. You become proficient in a {@variantrule Tool Proficiencies|MOD|Tool} or kit of your choice.",
-						"{@b Tool Expertice}. You gain expertise in a {@variantrule Tool Proficiencies|MOD|Tool} or kit of your choice.",
+						"{@b Tool Expertice}. You gain expertise in a {@variantrule Tool Proficiencies|MOD|Tool} or kit you are proficient in.",
 						"{@b Discount}. Whenever you buy non-magical equipment, you receive a 20% discount on its price."
 					]
 				}
