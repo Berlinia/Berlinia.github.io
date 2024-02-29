@@ -37,7 +37,7 @@
 			"name": "Weapon Properties",
 			"source": "MOD",
 			"entries": [
-				"Heavy, Light, Thrown etc"
+				"Weapons have various inherent properties that define them. For now we only have the ones outlined in {@book |PHB|Weapons|Weapons} chapter in the PHB." 
 				]
 		},
 		{
@@ -114,7 +114,7 @@
 					"name": "Pierce",
 					"prerequisite": "Martial Ranged Weapon or {@variantrule Weapon Properties|MOD|Reach Property}",
 					"entries": [
-						"If you hit a creature with this weapon and deal damage to the creature, you can make an additional free attack against a creature standing up to 5ft. behind the first creature."
+						"If you hit a creature with this weapon and deal damage to the creature, you can make an additional free attack against a creature standing up to 5ft. behind the first creature, but don’t add your ability modifier to that damage unless that modifier is negative."
 					]
 				},
 				{
@@ -122,10 +122,9 @@
 					"name": "Vex",
 					"prerequisite": "{@variantrule Weapon Properties|MOD|Ammunition, Finesse, or Light Property}",
 					"entries": [
-						"If you hit a creature with this weapon and deal damage to the creature, you have advantage on your next attack roll against htat creature before the end of your next turn."
+						"If you hit a creature with this weapon and deal damage to the creature, you have advantage on your next attack roll against that creature before the end of your next turn."
 					]
 				}
-				
 			]
 		},
 		{
