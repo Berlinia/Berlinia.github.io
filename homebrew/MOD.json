@@ -34,6 +34,24 @@
 	],
 	"variantrule": [
 		{
+			"name": "Backgrounds",
+			"source": "MOD",
+			"entries": [
+				"Backgrounds have been largely reworked. In 5th Edition, backgrounds are a largely irrelevant part of character creation, while they should be quite significant, especially on earlier levels. This has informed the design in a few ways.",
+				{
+					"type": "list",
+					"columns": 0,
+					"page": 0,
+					"name": "",
+					"items": [
+						"{@b Prominent Features.} Features have been redesigned, giving you access to slightly more powerful abilities. The hermits ability to harvest food for example is largely useless, since tracking food is not a particularly {@i interesting} part of the game. Similarly, a noble close to their home town should have access to more resources.",
+						"{@b Tool Proficiency.} Each background grants a choice of tool proficiencies.",
+						"{@b Skills.} Each background gives two skills in which you become proficient. You can also choose to instead gain expertise in one of the two skills."
+					]
+				}
+			]
+		},
+		{
 			"name": "NPC Tiers",
 			"source": "MOD",
 			"entries": [
@@ -1610,6 +1628,96 @@
 					"{@bold Speckled Scar.} You've been struck with some ballistic debris, resulting in a painful-looking but harmless scar."
 				]
 			]
+		}
+	],
+	"background": [
+		{
+			"name": "Acolyte",
+			"source": "PHB",
+			"page": 127,
+			"srd": true,
+			"basicRules": true,
+			"skillProficiencies": [
+				{
+					"insight": true,
+					"religion": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 2
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"item": "holy symbol|phb",
+							"displayName": "holy symbol (a gift to you when you entered the priesthood)"
+						},
+						{
+							"special": "sticks of incense",
+							"quantity": 5
+						},
+						{
+							"special": "vestments"
+						},
+						"common clothes|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1500
+						}
+					]
+				},
+				{
+					"a": [
+						{
+							"item": "book|phb",
+							"displayName": "prayer book"
+						}
+					],
+					"b": [
+						{
+							"special": "prayer wheel"
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Insight}, {@skill Religion}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "Two of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A {@item holy symbol|phb} (a gift to you when you entered the priesthood), a prayer {@item book|phb} or prayer wheel, 5 sticks of incense, vestments, a set of {@item common clothes|phb}, and a belt {@item pouch|phb} containing 15 gp"
+						}
+					]
+				},
+				{
+					"name": "Feature: Shelter of the Faithful",
+					"type": "entries",
+					"entries": [
+						"As an acolyte of your faith, you and your party can always find shelter in a temple of a god friendly to your own. Priests will give you their cheapest services for half cost, although you have to provide material components yourself. The first time you visit a new temple, you receive a {@item Potion of Healing|DMG} and 2 flask of {@item Holy Water (Flask)|PHB|holy water}.",
+						"You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple. While in that temple"
+					],
+					"data": {
+						"isFeature": true
+					}
+				}
+			],
+			"hasFluff": true
 		}
 	]
 }		
