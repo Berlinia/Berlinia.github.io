@@ -43,7 +43,7 @@
 				"type": "section",
 				"entries": [
 					"Dipping your sword in silver before you go slay some werewolves is well known behavior in adventurer land. However, there is much more than just silver. Not all materials are easy to come by, or work with, but a true warriors blade is often not made of copper. Adding a coating to a weapon does not make it magical, but often does improve on its capabilites.",
-					"{@b Requirements.} The necessary {@table Crafting Material|MOD|crafting materials}, a base weapon, a forge and a dedicated smithy that is up to the task. Applying new materials to a magical item is possible, but exceptionally expensive and prohibitively hard. Only smiths of legend can combine the two.",
+					"{@b Requirements.} The necessary {@table Crafting Materials|MOD|crafting materials}, a base weapon, a forge and a dedicated smithy that is up to the task. Applying new materials to a magical item is possible, but exceptionally expensive and prohibitively hard. Only smiths of legend can combine the two.",
 					"{@b Limitations.} Piercing weapons can have 3 material upgrades, Slashing 2, and bludgeoning 1."
 				]
 			}
@@ -730,7 +730,7 @@
 	],
 	"table": [
 		{
-			"name": "Materials",
+			"name": "Crafting Materials",
 			"source": "MOD",
 			"type": "table",
 			"caption": "Table of Materials for {{@variantrule Weapon Enhancements|MOD}",
