@@ -1633,7 +1633,7 @@
 	"background": [
 		{
 			"name": "Acolyte",
-			"source": "PHB",
+			"source": "MOD",
 			"page": 127,
 			"srd": true,
 			"basicRules": true,
