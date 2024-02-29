@@ -33,6 +33,46 @@
 		}
 	],
 	"variantrule": [
+		{
+			"name": "NPC Tiers",
+			"source": "MOD",
+			"entries": [
+				"Every NPC you meet in the world has a life, career, skills etc. In order to interact with the some homebrew systems, like the {@variantrule Weapon Enhancements|MOD} system, you are asked to find and identify the {@i skill} of a particular NPC. In this section, I provide a little explanation for what determines someones skill and how they can be identified/distinguished. These are given with level indications, trying to sort of tie power to their feats, as described in the DMG under TIERS OF PLAY.",
+				{
+					"type": "list",
+					"style": "list-hang",
+					"columns": 0,
+					"page": 0,
+					"name": "",
+					"items": [
+						"{@b Mundane.} This is someone who, while they might have practicing their craft for long, they haven't really gained any useful skill in it. A village smithy, who has spent their entire lives making horse-hooves, is unfit to create weapons. They can try, but the quality will be terrible.",
+						"{@b Local (level 1-6).} This is someone who is proficient in their chosen craft. The local healer, who has sampled various plants and substances used to brew potions and other useful items. Their renown extends not much further than the closest few villages, but they are nevertheless proficient in what they do. They can be found everywhere, however their skill and resources are limited.",
+						"{@b Expert (level 7-11).} An expert has honed their craft to the point where there is little they can't do. They are well known both in their community, and outside. Consider an army general, who retired afterwards and went to train new recruits somewhere. They are good at what they do, and others know that they are good at what they do. Very often, they are tied to a location or patroned by some organization, and as such has considerable resources and aid. However, they are not always independent.",
+						{
+							"type": "entries",
+							"name": "",
+							"page": 0,
+							"entries": [
+								"{@b Legendary (level 11-15).} Legendary NPCs are true masters of what they do. Their skill and renown extends far beyond national borders, and their services are in great demand. However, this benefits them as they can often work with whom they want. They are not tied to a particular organization, and as such employing them can be dependent on their whims. They are also often hard to reach, as their considerable resources afford them to work exactly how they want. We provide two examples here, the Legendary Swordcrafter and the Legendary Priest.",
+								{
+									"type": "list",
+									"style": "list-hang",
+									"columns": 0,
+									"page": 0,
+									"name": "",
+									"items": [
+										"Legendary Swordscrafter. Deep within the Chuult jungle, in isolation lives Jhafar. He has made many blades, some of which were used for purposes he doesn't approve of. Messengers from all over come for his services, but he only ever makes a weapon these days for those he believes will do good.",
+										"Priest of Bhal. Under Baldur's Gate, where the Dead Three were thwarted once again, lives a priest of Bhal. If you seek a blessing for your dagger, assassin, go to this priest. His task for you is simple. Dedicate yourself to Bhal, by murdering 7 innocents. The names are on a list. If you finish the entire list, return to the priest and he can grant you a blessing on your dagger." 
+									]
+								}
+							]
+						}
+						
+					]
+				}
+				
+			]
+		},
 		{ 
 			"name": "Weapon Enhancements",
 			"source": "MOD",
