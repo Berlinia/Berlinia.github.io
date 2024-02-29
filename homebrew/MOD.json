@@ -43,8 +43,14 @@
 				"type": "section",
 				"entries": [
 					"Dipping your sword in silver before you go slay some werewolves is well known behavior in adventurer land. However, there is much more than just silver. Not all materials are easy to come by, or work with, but a true warriors blade is often not made of copper. Adding a coating to a weapon does not make it magical, but often does improve on its capabilites.",
-					"{@b Requirements.} The necessary {@table Crafting Materials|MOD|crafting materials}, a base weapon, a forge and a dedicated smithy that is up to the task. Applying new materials to a magical item is possible, but exceptionally expensive and prohibitively hard. Only smiths of legend can combine the two.",
-					"{@b Limitations.} Weapons can only ever have a single material upgrade. If you wish to provide another material upgrade, the previous one needs to be removed, which costs 1000gp."
+					{
+						"type": "list",
+						"style": "list-hang",
+						"items": [
+							"{@b Requirements.} The necessary {@table Crafting Materials|MOD|crafting materials}, a base weapon, a forge and a dedicated smithy that is up to the task. Applying new materials to a magical item is possible, but exceptionally expensive and prohibitively hard. Only smiths of legend can combine the two.",
+							"{@b Limitations.} Weapons can only ever have a single material upgrade. If you wish to provide another material upgrade, the previous one needs to be removed, which costs 1000gp."
+						]
+					}					
 				]
 			},
 			{
