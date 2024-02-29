@@ -1800,60 +1800,7 @@
 					]
 				},
 				{
-					"name": "Dust Digger",
-					"type": "entries",
-					"entries": [
-						"Prior to becoming an adventurer, you spent most of your young life crawling around in the dust, pilfering relics of questionable value from crypts and ruins. Though you managed to sell a few of your discoveries and earn enough coin to buy proper adventuring gear, you have held onto an item that has great emotional value to you. Roll on the Signature Item table to see what you have, or choose an item from the table.",
-						{
-							"type": "table",
-							"caption": "Signature Item",
-							"colLabels": [
-								"d8",
-								"Item"
-							],
-							"colStyles": [
-								"col-1 text-center",
-								"col-11"
-							],
-							"rows": [
-								[
-									"1",
-									"{@item pole (10-foot)|phb|10-foot pole}"
-								],
-								[
-									"2",
-									"{@item Crowbar|phb}"
-								],
-								[
-									"3",
-									"Hat"
-								],
-								[
-									"4",
-									"{@item Hooded lantern|phb}"
-								],
-								[
-									"5",
-									"Medallion"
-								],
-								[
-									"6",
-									"{@item Shovel|phb}"
-								],
-								[
-									"7",
-									"{@item Sledgehammer|phb}"
-								],
-								[
-									"8",
-									"{@item Whip|phb}"
-								]
-							]
-						}
-					]
-				},
-				{
-					"name": "Feature: ",
+					"name": "Feature: Deep Diver",
 					"type": "entries",
 					"entries": [
 						"You are familiar with ruins and dungeons from old civilizations. When entering such an archeological ruin, you can determine its original purpose, as well as recall information about its potential layout. Your party additionally can not be surprised while inside the dungeon, as you recognize potential ambush spots immediatelly. Finally, when taking a short or long rest, the roll to determine if you are found and your rest is interrupted is rolled with advantage."
