@@ -781,7 +781,7 @@
 					"name": "",
 					"page": 0,
 					"entries": [
-						"Your blade is infused with an ancient dragons wrath and connection to the weave, after you heroically defeated it in its lair. Each dragon has a specific damage type they deal. If a dragon has multiple, you or the DM chooses one.",
+						"Your blade is infused with an ancient dragons wrath and connection to the weave, after it was heroically defeated it in its lair. Each dragon has a specific damage type they deal. If a dragon has multiple, you or the DM chooses one.",
 						{
 							"type": "list",
 							"name": "Dragon's Wrath Weapons",
@@ -802,7 +802,7 @@
 					"name": "",
 					"page": 0,
 					"entries": [
-					"Your blade is infused with a giants might, after you fought and defeated a powerful giant. Due to the nature of the Ordening, defeating more powerful giants applies the effects of the highest caste.",
+					"Your blade is infused with a giants might, after a deadly battle with a powerful giant. Due to the nature of the Ordening, defeating more powerful giants applies the effects of the highest caste.",
 					{
 						"type": "list",
 						"name": "Giant's Might Weapons",
@@ -822,13 +822,13 @@
 					"name": "",
 					"page": 0,
 					"entries": [
-						"You have fought and killed many enemies. Either through a heroic feat in a battlefield, or because you are a mass-murderer or anything in between.",
+						"Someone fought and killed many enemies with this weapon. Either through a heroic feat in a battlefield, or because they were a mass-murderer, the metal remembers.",
 						{	
 							"type": "list",
 							"items": [
-								"{@b Ninja's Katana.} You are used to fighting while outmatched. When more than one enemy is within 5ft. of you while wielding this weapon, you gain +1 to your AC, to hit and damage bonus.",
-								"{@b Heroic Warrior.} You wield your weapon in the face of overwhelming danger. When other creatures see you fight with it, they are emboldened by your actions, gaining resistance to the {@condition frightened|PHB} condition and 1d8+PB temporary hitpoints at the start of combat.",
-								"{@b Mass Murderer.} You have assassinated more people than you can count, and your blade thirsts for blood. The number needed to score a critical hit is reduced by 1 (this effect can stack). When dealing the killing blow on a creature, your next attack has advantage. You can only use this feature once per long rest."
+								"{@b Ninja's Katana.} The weapon is used to fighting while outmatched. When more than one enemy is within 5ft. of you while wielding this weapon, you gain +1 to your AC, to hit and damage bonus.",
+								"{@b Heroic Warrior.} Someone once wielded this weapon in the face of overwhelming danger. When other creatures see you fight with it, they are emboldened by your actions, gaining resistance to the {@condition frightened|PHB} condition and 1d8+PB temporary hitpoints at the start of combat.",
+								"{@b Mass Murderer.} Someone assassinated more people than you can count, and the blade now thirsts for blood. The number needed to score a critical hit is reduced by 1 (this effect can stack). When dealing the killing blow on a creature, your next attack has advantage. You can only use this feature once per long rest."
 							]
 						}
 					]
@@ -852,11 +852,11 @@
 			"rows": [
 				[
 					"Devil (Pit Fiend, Erinye etc) ",
-					"You have received the blessing (or curse) of a powerful devil, let's say a Pit Fiend. Once per short rest, you can channel the pit fiends Fear Aura. Any creature within 30ft that can see you must succeed on a DC12+PB WIS save or be {@condition frightened|PHB} by you. A creature that succeeds on this saving throw is immune to its effects for 24 hours."
+					"Your weapon has received the blessing (or curse) of a powerful devil, let's say a Pit Fiend. Once per short rest, you can channel the pit fiends Fear Aura. Any creature within 30ft that can see you must succeed on a DC12+PB WIS save or be {@condition frightened|PHB} by you. A creature that succeeds on this saving throw is immune to its effects for 24 hours."
 				],
 				[
 					"Archdevil (Zariel, Gargauth, Mephistopheles)",
-					"You are aligned with Mephistopheles, the legendary archdevil who created Hellfire. Your weapon deals 1d6 additional fire damage that can not be resisted. Once per long rest, you can cast {@spell summon fiend|TCE} (devil). Once per short rest, you can channel hellfire through your weapon. Every creature in a 20ft cone originating from you must succeed on a DC12+PB DEX save or take 8d6 fire damage. This damage can not be resisted."
+					"The weapon has been touched by Mephistopheles, the legendary archdevil who created Hellfire. Your weapon deals 1d6 additional fire damage that can not be resisted. Once per long rest, you can cast {@spell summon fiend|TCE} (devil). Once per short rest, you can channel hellfire through your weapon. Every creature in a 20ft cone originating from you must succeed on a DC12+PB DEX save or take 8d6 fire damage. This damage can not be resisted."
 				],
 				[
 					"Celestial (Deva, Planetar, Solar) ",
@@ -868,11 +868,11 @@
 				],
 				[
 					"Greater Demon (Balor, Marilith)",
-					"Somehow, you managed to convince a Balor not to kill you, but bless you instead. Once per long rest, you can channel the Balor's Fire aura. For 1 minute, each creature takes 1d6 fire damage if it starts its turn within 5ft of you. When a creature hits you with a melee attack, it takes an additional 1d6 fire damage. "
+					"Somehow, someone managed to convince a Balor not to kill them, but bless their weapon instead. Once per long rest, you can channel the Balor's Fire aura. For 1 minute, each creature takes 1d6 fire damage if it starts its turn within 5ft of you. When a creature hits you with a melee attack, it takes an additional 1d6 fire damage. "
 				],
 				[
 					"Demon Prince (Baphomet, Grazz't)",
-					"You have gained the attention of the demon prince Graz'zt. Damage dealt by this weapon can not be resisted. Once per short rest, you can teleport up to 120ft to an unoccupied space you can see. Once per long rest, you can cast {@spell Crown of Madness|PHB} as a bonus action."
+					"This weapon once found itself in the realm of the demon prince Graz'zt, where few know what it was used for. Damage dealt by this weapon can not be resisted. Once per short rest, you can teleport up to 120ft to an unoccupied space you can see. Once per long rest, you can cast {@spell Crown of Madness|PHB} as a bonus action."
 				],
 				[
 					"Creature of the Far Planes (Abolethic Sovereignty, C'thulu)",
