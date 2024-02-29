@@ -776,17 +776,24 @@
 			"rows": [
 				[
 				"Dragon's Wrath",
-				"Your blade is infused with an ancient dragons wrath and connection to the weave, after you heroically defeated it in its lair. Each dragon has a specific damage type they deal. If a dragon has multiple, you or the DM chooses one.",
 				{
-					"type": "list",
-					"name": "Dragon's Wrath Weapons",
-					"items": [
-						"{@b Slumbering. (Young)} Whenever you critically strike with this weapon, you deal an additional 5 damage of the type damage to each creature within 5ft of the original target.",
-						"{@b Stirring. (Adult)} In addition, you gain +1 to hit attack and damage rolls made using this weapon and deal an additional {@dice 1d6} of type damage.",
-						"{@b Wakened. (Ancient)} The bonus of the Stirring property increases to +2, and the damage dice to {@dice 2d6}.",
-						"{@b Ascendant. (Legendary)} As an action, you can summon the full might of the dragon's breath. Each creature in a 30ft. cone must succeed on a DC12+PB DEX save or take 10d6 type damage."
+					"type": "entries",
+					"name": "",
+					"page": 0,
+					"entries": [
+						"Your blade is infused with an ancient dragons wrath and connection to the weave, after you heroically defeated it in its lair. Each dragon has a specific damage type they deal. If a dragon has multiple, you or the DM chooses one.",
+						{
+							"type": "list",
+							"name": "Dragon's Wrath Weapons",
+							"items": [
+								"{@b Slumbering. (Young)} Whenever you critically strike with this weapon, you deal an additional 5 damage of the type damage to each creature within 5ft of the original target.",
+								"{@b Stirring. (Adult)} In addition, you gain +1 to hit attack and damage rolls made using this weapon and deal an additional {@dice 1d6} of type damage.",
+								"{@b Wakened. (Ancient)} The bonus of the Stirring property increases to +2, and the damage dice to {@dice 2d6}.",
+								"{@b Ascendant. (Legendary)} As an action, you can summon the full might of the dragon's breath. Each creature in a 30ft. cone must succeed on a DC12+PB DEX save or take 10d6 type damage."
+							]
+						}
 					]
-				}
+				}		
 			],
 			[
 				"Giant Slayer",
