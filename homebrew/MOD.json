@@ -46,7 +46,7 @@
 						{
 							"type": "list",
 							"items": [
-								"{@b Requirements.} The necessary {@table Crafting Materials|MOD|crafting materials}, a base weapon, a forge and a dedicated smithy that is up to the task. Applying new materials to a magical item is possible, but exceptionally expensive and prohibitively hard. Only smiths of legend can combine the two.",
+								"{@b Requirements.} The necessary {@table Weapon Enhancements: Crafting Materials|MOD|crafting materials}, a base weapon, a forge and a dedicated smithy that is up to the task. Applying new materials to a magical item is possible, but exceptionally expensive and prohibitively hard. Only smiths of legend can combine the two.",
 								"{@b Limitations.} Weapons can only ever have a single material base and a material coating. If you wish to provide another material upgrade, the previous one needs to be removed, which costs 1000gp."
 							]
 						}					
@@ -857,7 +857,7 @@
 			]
 		},
 		{
-			"name": "Crafting Materials",
+			"name": "Weapon Enhancements: Crafting Materials",
 			"source": "MOD",
 			"type": "table",
 			"caption": "Table of Weapon Materials",
