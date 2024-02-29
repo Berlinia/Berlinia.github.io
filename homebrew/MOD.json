@@ -1702,6 +1702,11 @@
 							"type": "item",
 							"name": "Equipment:",
 							"entry": "A {@item holy symbol|phb} (a gift to you when you entered the priesthood), a prayer {@item book|phb} or prayer wheel, 5 sticks of incense, vestments, a set of {@item common clothes|phb}, and a belt {@item pouch|phb} containing 15 gp"
+						},
+						{
+							"type": "item",
+							"name": "Feature:",
+							"entry": "You gain the {@feat Magic Initiate|PHB|Magic Intiate: Cleric} feat."
 						}
 					]
 				},
@@ -1709,7 +1714,7 @@
 					"name": "Feature: Shelter of the Faithful",
 					"type": "entries",
 					"entries": [
-						"As an acolyte of your faith, you and your party can always find shelter in a temple of a god friendly to your own. Priests will give you their cheapest services for half cost, although you have to provide material components yourself. The first time you visit a new temple, you receive a {@item Potion of Healing|DMG} and 2 flask of {@item Holy Water (Flask)|PHB|holy water}.",
+						"As an acolyte of your faith, you and your party can always find shelter in a temple of a god friendly to your own. Priests will give you their cheapest services for half cost, although you have to provide material components yourself. The first time you visit a new temple, you receive a {@item Potion of Healing|DMG} and 2 flasks of {@item Holy Water (Flask)|PHB|holy water}.",
 						"You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple. While in that temple"
 					],
 					"data": {
