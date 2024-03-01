@@ -1631,6 +1631,44 @@
 	],
 	"background": [
 		{
+			"name": "Commoner",
+			"source": "MOD",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "Choose two out of Animal Handling, Nature, Persuasion or Athletics"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "Choose two out of {@item Cook's Utensils|MOD}, {@item Jeweler's Tools|MOD}, {@item Cobbler's Tools|MOD}, {@item Herbalist Tools|MOD}, {@item Surgeon's Tools|MOD}"
+						},
+						{
+							"type": "item",
+							"name": "Feat:",
+							"entry": "You gain the {@feat Tough|PHB} feat."
+						}
+					]
+				},
+				"There is quite literally nothing special about your past. You had a moddest, humble profession, like farmer or cobbler.",
+				{
+					"name": "Feature: Man of the People",
+					"type": "entries",
+					"entries": [
+						"The common folk recognize you as one of them. When in a settlement, you gain advantage on all checks to investigate local rumours. Furthermore, you know how to make use of materials in a more efficient manner. You can spend half the amount of daily maintenance gold. Futhermore, you can buy trade goods at half price."
+					],
+					"data": {
+						"isFeature": true
+					}
+				}
+			]
+		},
+		{
 			"name": "Cultist",
 			"source": "MOD",
 			"entries": [
@@ -1656,7 +1694,7 @@
 						{
 							"type": "item",
 							"name": "Feat:",
-							"entry": "You gain the {@feat magic initiate|PHB}."
+							"entry": "You gain the {@feat magic initiate|PHB} feat."
 						}
 					]
 				},
@@ -1665,6 +1703,48 @@
 					"type": "entries",
 					"entries": [
 						"Your time in the cult has given you grave understanding about the ways of the world. You know that there are things out there that wish to influence our world, and worse than that. You know how to talk to them. Choose one creature from the outer planes, like a devil, demon etc. You can cast {@spell commune|PHB} to communicate with that creature only. Once you commune in this way, you can not do so again until 7 days have passed. "
+					],
+					"data": {
+						"isFeature": true
+					}
+				}
+			]
+		},
+		{
+			"name": "Entertainer",
+			"source": "MOD",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "Acrobatics, Performance"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@item Cook's Utensils|MOD}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One common language and one rare language"
+						},
+						{
+							"type": "item",
+							"name": "Feat:",
+							"entry": "You gain the {@feat Performer|MOD} feat."
+						}
+					]
+				},
+				{
+					"name": "Feature: Work the Crowds",
+					"type": "entries",
+					"entries": [
+						"You are profficient at entertaining for room and board. With a little convincing, you can extend that to your whole party. While within settlements, you and up to four party members do not need to spend your daily costs, for a number of days depending on the size of the settlement. One day for a small settlement, one week for a medium settlement, two weeks for a large settlement, and a month for a metropolis."
 					],
 					"data": {
 						"isFeature": true
@@ -1922,6 +2002,17 @@
 		}
 	],
 	"feat": [
+		{
+			"name": "Performer",
+			"source": "MOD",
+			"prerequisite": [
+				"None"
+			],
+			"entries": [
+				"{@b Perform.} If you spend at least half a short rest performing, creatures that hear your song can roll one additional hit dice and add the number to their number of hit points gained."
+			]
+
+		},
 		{
 			"name": "Tool Expert",
 			"source": "MOD",
