@@ -1631,6 +1631,75 @@
 	],
 	"background": [
 		{
+			"name": "Gladiator",
+			"source": "MOD",
+			"skillProficiencies": [
+				{
+					"athletics": true,
+					"performance": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"Surgeon's Kit",
+							"Smith's Tools"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Athletics}, {@skill Performance}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@item Smith's Tools|MOD} or {@item Surgeon's Kit|MOD}."
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One common language"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "One martial weapon of your choice."
+						},
+						{
+							"type": "item",
+							"name": "Feat:",
+							"entry": "You gain the {@feat savage attacker|phb} feat"
+						}
+					]
+				},
+				{
+					"name": "Feature: Every Fight can be Won",
+					"type": "entries",
+					"entries": [
+						"In your times as a gladiator slave, you fought many a beasts and creatures. You have learnt how to fight them and how to overcome these challenges. You become profficient with {@quickref improvised weapons|PHB} and your attacks against beasts and humanoids are also particularly potent. You reduce the amount needed to critical hit such creatures by 1. This effect can stack."
+					],
+					"data": {
+						"isFeature": true
+					}
+				}
+			],
+			"hasFluff": true
+		}
+		{
 			"name": "Commoner",
 			"source": "MOD",
 			"skillProficiencies": [
