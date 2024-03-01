@@ -48,6 +48,16 @@
 						]
 				},
 				{
+					"name": "Daily Lifestyle",
+					"entries": [
+							"Adventuring is hard work, and you make coin to spend it. You need to be nourished, find a place to sleep and all things needed in order to not die the first time you face a beholder. Daily upkeep costs come in four levels.",
+							"{@i Squalid 1gp per day}. You essentially eat scraps and rations and sleep outside." ,
+							"{@i Modest 10gp per day}. You eat decently well and sleep in relative comfort. You can short rest twice per day.",
+							"{@i Well 50gp per day}. You eat well and sleep in peace. You have your own room, three nourishing meals a day, and can spear some for fat. You can short rest three times per day. Only available in large settlements. ",
+							"{@i Extravagant 100gp or more per day}. You eat and sleep like a king. You can order your own meals. You can short rest as often as you want per day. Only available in a metropolis"  
+						]
+				},
+				{
 					"name": "Short Rests",
 					"entries": [
 						"Short rests still require one hour, however you are limited in the amount of short rests you can take a day by two things.",
@@ -58,11 +68,33 @@
 							"page": 0,
 							"name": "",
 							"items": [
-								"After 2 days of traveling on {@item rations|srd}, you can only short rest once per day. This can be extended through various backgrounds, feats and tools (see for example the {@item Cook's Utensils|MOD} tool."
+								"After traveling more than 1 day on {@item rations|srd}, you can only short rest once per day. Various backgrounds, feats and tools extend how many days you can travel on rations(see for example the {@item Cook's Utensils|MOD} tool) before your previous lifestyle dries up. Rations are inexpensive they can be bought literally everywhere, found everywhere and are generally pretty gross to eat over a long period of time.",
+								"Your daily upkeep costs determine how many short rests you can take, and they can be banked. Before you go on a trip, determine if you want to bank Modest, Well or Extravagant lifestyle. Each day you determine if you want to keep paying that gold, or want to go back to rations. Once you have gone to rations, you can not go back to a better lifestyle costs except if you reach another settlement."
 							]
-						} 
+						},
+						"This is best explained through an example. Lets say you are going on a 10 day trip, departing from a small settlement headed to a metropolis. You decide you will bank a modest lifestyle. On the first day you spend 10gp and can short rest twice. On the second day, you decide to go to rations. You spend 1gp but can still short rest twice, due to memories of a better life. On the third day, if you have someone with proficiency in cook's utensils, you can still short rest twice. On the fourth day, you can now only short rest once."
+						]
+				},
+				{
+					"name": "Long Rests",
+					"entries": [
+						"Long rests still happen overnight, but are alot more limited. The changes to long rests are as follows",
+						{
+							"type": "list",
+							"style": "list-hang",
+							"columns": 0,
+							"page": 0,
+							"name": "",
+							"items": [
+								"You can not long rest while on rations.",
+								"Outside of settlements or safe-havens, you can only long rest once.",
+								"Doing anything other than sleeping, eating and relaxing interrupts a long rest.",
+								"Long resting recharges all your hit dice."
+							]
+						},
 						]
 				}
+
 			]
 		},
 		{
