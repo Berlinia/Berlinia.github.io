@@ -34,6 +34,38 @@
 	],
 	"variantrule": [
 		{
+			"name": "Resting Rules",
+			"source": "MOD",
+			"page": 0,
+			"ruleType": "V",
+			"entries": [
+				"This set of resting rules are meant to ammend my issues with resting in 5th Edition and how it relates to 5e economy. Adventurers are busy people doing dangerous jobs. However, for some reason 5e thinks that an adventurer living in squalid conditions is as capable and ready to fight as one living in luxury. I reject that notion. The other rule, has to do with resting on long trips in the wilderness. When a DM wants to make the trip itself a challenge, they sort of can't. You do not want to run 4-8 encounters a day when the party is traveling for 10 days. But you do want the travel to be a story, and as such fighting powerful monsters is part of that story. I think I have quite elegantly combined these two in the following ways",
+				{
+					"name": "Sleep",
+					"entries": [
+							" Sleeping does not equal a long-rest. Sleeping for 8hours without major interruptions, now recharges half your hit dice and allows you to roll any hit-dice you want as you would for a regular short rest. You first recharge hitdice, and then roll them. Features that function 'until the next dawn' or 'every 24 hours' still work however, regardless of your sleep. Sleeping for any amount less than 8 hours only recharges a quarter of your hit dice rounding down. That means that if you are healthy, and do not need the hit dice, you can make the concious decision to take a watch.",
+							"{@b Sleep Interruptions.} If your sleep is interrupted more than once over a night, it counts as you sleeping for less than 8 hours."
+						]
+				},
+				{
+					"name": "Short Rests",
+					"entries": [
+						"Short rests still require one hour, however you are limited in the amount of short rests you can take a day by two things.",
+						{
+							"type": "list",
+							"style": "list-hang",
+							"columns": 0,
+							"page": 0,
+							"name": "",
+							"items": [
+								"After 2 days of traveling on {@item rations|srd}, you can only short rest once per day. This can be extended through various backgrounds, feats and tools (see for example the {@item Cook's Utensils|MOD} tool."
+							]
+						} 
+						]
+				}
+			]
+		},
+		{
 			"name": "Backgrounds",
 			"source": "MOD",
 			"entries": [
@@ -665,7 +697,7 @@
 					"type": "list",
 					"items": [
 						 "{@bold Nourishing Meals.} As part of a short rest, you and five other creatures regain PB additional hitpoints.",
-						 "{@bold Full Stomach.} The first time you roll on a check to get Exhaustion for traveling over 8 hours, you do so with advantage."
+						 "{@bold Nice food!} You can extend the number of days you can travel without invoking short rest penalties (as per {@variantrule Resting Rules|MOD|the resting rules}) by 1."
 					]
 				}
 			]
@@ -1698,7 +1730,7 @@
 				}
 			],
 			"hasFluff": true
-		}
+		},
 		{
 			"name": "Commoner",
 			"source": "MOD",
