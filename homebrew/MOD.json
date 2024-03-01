@@ -2165,9 +2165,6 @@
 		{
 			"name": "Performer",
 			"source": "MOD",
-			"prerequisite": [
-				"None"
-			],
 			"entries": [
 				"{@b Perform.} If you spend at least half a short rest performing, creatures that hear your song can roll one additional hit dice and add the number to their number of hit points gained."
 			]
@@ -2176,9 +2173,6 @@
 		{
 			"name": "Tool Expert",
 			"source": "MOD",
-			"prerequisite": [
-				"None"
-			],
 			"entries": [
 				"You have considerable knowledge in the usage of tools. You get the following benefits.",
 				{
