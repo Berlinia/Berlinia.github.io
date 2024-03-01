@@ -36,7 +36,6 @@
 		{
 			"name": "Resting Rules",
 			"source": "MOD",
-			"page": 0,
 			"ruleType": "V",
 			"entries": [
 				"This set of resting rules are meant to ammend my issues with resting in 5th Edition and how it relates to 5e economy. Adventurers are busy people doing dangerous jobs. However, for some reason 5e thinks that an adventurer living in squalid conditions is as capable and ready to fight as one living in luxury. I reject that notion. The other rule, has to do with resting on long trips in the wilderness. When a DM wants to make the trip itself a challenge, they sort of can't. You do not want to run 4-8 encounters a day when the party is traveling for 10 days. But you do want the travel to be a story, and as such fighting powerful monsters is part of that story. I think I have quite elegantly combined these two in the following ways",
@@ -54,7 +53,7 @@
 							"{@i Squalid 1gp per day}. You essentially eat scraps and rations and sleep outside." ,
 							"{@i Modest 10gp per day}. You eat decently well and sleep in relative comfort. You can short rest twice per day.",
 							"{@i Well 50gp per day}. You eat well and sleep in peace. You have your own room, three nourishing meals a day, and can spear some for fat. You can short rest three times per day. Only available in large settlements. ",
-							"{@i Extravagant 100gp or more per day}. You eat and sleep like a king. You can order your own meals. You can short rest as often as you want per day. Only available in a metropolis"  
+							"{@i Extravagant 100gp or more per day}. You eat and sleep like a king. You can order any meal you want. You can short rest as often as you want per day. Only available in a metropolis"  
 						]
 				},
 				{
@@ -78,7 +77,7 @@
 				{
 					"name": "Long Rests",
 					"entries": [
-						"Long rests still happen overnight, but are alot more limited. The changes to long rests are as follows",
+						"Long rests still happen overnight, but are alot more limited. The changes to long rests are as follows. ",
 						{
 							"type": "list",
 							"style": "list-hang",
@@ -94,7 +93,6 @@
 						}
 						]
 				}
-
 			]
 		},
 		{
