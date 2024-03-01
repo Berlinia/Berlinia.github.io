@@ -1633,6 +1633,17 @@
 		{
 			"name": "Commoner",
 			"source": "MOD",
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"animal handling",
+							"persuasion",
+							"athletics"
+						]
+					}
+				}
+			],
 			"entries": [
 				{
 					"type": "list",
