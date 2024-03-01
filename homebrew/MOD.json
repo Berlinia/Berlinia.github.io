@@ -1671,6 +1671,17 @@
 		{
 			"name": "Cultist",
 			"source": "MOD",
+			"skillProficiencies": [
+				{
+					"occultism": true,
+					"choose": {
+						"from": [
+							"arcana",
+							"religion"
+						]
+					}
+				}
+			],
 			"entries": [
 				{
 					"type": "list",
