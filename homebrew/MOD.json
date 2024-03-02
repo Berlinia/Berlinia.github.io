@@ -34,6 +34,28 @@
 	],
 	"variantrule": [
 		{
+			"name": "Bastions for WEL",
+			"source": "MOD",
+			"ruleType": "O",
+			"entries": [
+				"This is the running ruleset for Bastions in our WEL game. This is not to be used in other campaigns. Basically, I thought a bit and then realised I really didn't want to make this too much of a read for you, nor too much of mechanical tracking thing. Instead, I thought it would be cool if I gave some cool bonuses based on the lairs you have already completed. So here goes:",
+				{
+					"type": "list",
+					"columns": 0,
+					"page": 0,
+					"name": "",
+					"items": [
+						"{@b Illithid Transportation Device.} This device, operated by Gor, gives the keep the ability to teleport or planeshift anywhere in the world. You are 15th level heroes damn it. Mechanically, this allows you, once per lair, to summon one of the retainers you met in previous adventures for 1 minute. (if anyone other than Gor operates the device, the teleportation is non-permanent).",
+						"{@b The Enucleator.} The psionic machine, used to modify the body of any creature, was mostly broken during your first forey into the Shadowkeep. Paul has been busy figuring out how it works and has managed to get it to inscribe spells into your body. Each lair, pick one spell of frist, second and third level, and obtain a magical tattoo that lets you cast that spell as if casting from a scroll.",
+						"{@b The Shadowkeep.} The keep itself is the remains of Count von Glauer's Shadowkeep, bound to Carlisle's Essence. Every powerful foe you slay has their own essence absorbed by the keep. Before embarking on a mission, choose one damage type (psychic, necrotic, cold for now). You are resistant to that damage.",
+						"{@b Blood banks.} Inside the keep you found what looked like vials of healing potions! How nice of Von Glauer to have all these vials of red liquid that heal you. You all start each mission with 1 potion of healing (for now superior healing).",
+						"{@b Durixavinox's Throne.} Carrying the throne back was very hard work, but damn it wasn't it worth it. Mir'ror now has a place to sit and remind himself of his family. He remembers so much, he has an army of spectral kobolds that keep things clean and help with production! You have all material components for spells you might want.",
+						"{@b Carnelian's Rest.} Carnelian might have died, but Lazuli was not done with her horse. There are now stables in the Shadowkeep, for all celestial beings. Every time Lazuli's mount dies, a new one arrives the next short rest. (Maybe we can add another mount for other people, if they want it? discuss in discord)."
+					]
+				}
+			]
+		},
+		{
 			"name": "Resting Rules",
 			"source": "MOD",
 			"ruleType": "V",
@@ -1904,7 +1926,8 @@
 					"name": "Feature: Work the Crowds",
 					"type": "entries",
 					"entries": [
-						"You are profficient at entertaining for room and board. With a little convincing, you can extend that to your whole party. While within settlements, you and up to four party members do not need to spend your daily costs, for a number of days depending on the size of the settlement. One day for a small settlement, one week for a medium settlement, two weeks for a large settlement, and a month for a metropolis."
+						"You are profficient at entertaining for room and board. With a little convincing, you can extend that to your whole party. While within settlements, you and up to four party members do not need to spend up to Modest Lifestyle costs, for a number of days depending on the size of the settlement. One day for a small settlement, one week for a medium settlement, two weeks for a large settlement, and a month for a metropolis.",
+						"Once per travel, when out of a settlement, if you find a group of people willing to watch you perform, you and your party can take a short rest, that does not get subtracted of each party members number of short rests available."
 					],
 					"data": {
 						"isFeature": true
