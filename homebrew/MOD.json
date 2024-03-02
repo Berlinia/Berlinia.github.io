@@ -86,7 +86,7 @@
 							"name": "",
 							"items": [
 								"You can not long rest while on rations.",
-								"Outside of settlements or safe-havens, you can only long rest once.",
+								"Outside of settlements or safe-havens, you can only long rest once, provided you can find a safe place to sleep.",
 								"Doing anything other than sleeping, eating and relaxing interrupts a long rest.",
 								"Long resting recharges all your hit dice."
 							]
