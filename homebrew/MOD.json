@@ -1715,6 +1715,77 @@
 	],
 	"background": [
 		{
+			"name": "Guard",
+			"source": "MOD",
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"perception",
+							"insight",
+							"athletics",
+							"investigation"
+						],
+						"count": 2
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"Cook's Utensils",
+							"Smith's Tools"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "Choose 2 from {@skill perception|PHB}, {@skill insight|PHB}, {@skill athletics|PHB}, {@skill investigation|PHB}."
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@item Smith's Tools|MOD} or {@item Cook's Utensils|MOD}."
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One common language"
+						},
+						{
+							"type": "item",
+							"name": "Feat:",
+							"entry": "You gain the {@feat Alert|MOD} feat"
+						}
+					]
+				},
+				{
+					"name": "Feature: One of Many",
+					"type": "entries",
+					"entries": [
+						"You know how guards operate, and how to handle them. If your party is ever caught for a minor infraction, you can convince the guards to let you go, with no check required. Furthermore, when you enter a new city for the first time, you can discuss with its guards and gain accurate information on the goings on within the city."
+					],
+					"data": {
+						"isFeature": true
+					}
+				}
+			],
+			"hasFluff": true
+		},
+		{
 			"name": "Gladiator",
 			"source": "MOD",
 			"skillProficiencies": [
@@ -1774,7 +1845,7 @@
 					"name": "Feature: Every Fight can be Won",
 					"type": "entries",
 					"entries": [
-						"In your times as a gladiator slave, you fought many a beasts and creatures. You have learnt how to fight them and how to overcome these challenges. You become profficient with {@quickref improvised weapons|PHB} and your attacks against beasts and humanoids are also particularly potent. You reduce the amount needed to critical hit such creatures by 1. This effect can stack."
+						"In your times as a gladiator slave, you fought many a beasts and creatures. You have learnt how to fight them and how to overcome these challenges. You become profficient with {@quickref improvised weapons|PHB} and your attacks against beasts and humanoids are also particularly potent. You reduce the amount needed to critical hit such creatures by 1. This effect can stack with other similar effects."
 					],
 					"data": {
 						"isFeature": true
@@ -2185,6 +2256,15 @@
 		}
 	],
 	"feat": [
+		{
+			"name": "Alert",
+			"source": "MOD",
+			"entries": [
+				"{@b Initiative Proficiency.} When you roll initiative, you can add your profieciency bonus to the roll.",
+				"{@b Initiative Swap.} Immediatelly after you roll initiative, you can swap your initiative with that of a willing creature."
+			]
+
+		},
 		{
 			"name": "Performer",
 			"source": "MOD",
